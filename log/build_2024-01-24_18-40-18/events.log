@@ -1,0 +1,161 @@
+[0.000000] (-) TimerEvent: {}
+[0.000506] (laser_consumer) JobQueued: {'identifier': 'laser_consumer', 'dependencies': OrderedDict()}
+[0.000577] (ldlidar_stl_ros2) JobQueued: {'identifier': 'ldlidar_stl_ros2', 'dependencies': OrderedDict()}
+[0.000660] (laser_consumer) JobStarted: {'identifier': 'laser_consumer'}
+[0.098801] (-) TimerEvent: {}
+[0.099290] (ldlidar_stl_ros2) JobStarted: {'identifier': 'ldlidar_stl_ros2'}
+[0.187101] (laser_consumer) JobProgress: {'identifier': 'laser_consumer', 'progress': 'cmake'}
+[0.188172] (laser_consumer) JobProgress: {'identifier': 'laser_consumer', 'progress': 'build'}
+[0.189814] (laser_consumer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer', '--', '-j4', '-l4'], 'cwd': '/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'pt:pt_BR:en'), ('USER', 'edgar'), ('XDG_SEAT', 'seat0'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mint'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/edgar'), ('DESKTOP_SESSION', 'mate'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'edgar'), ('WINDOWID', '65011718'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c2'), ('INSIDE_CAJA_PYTHON', ''), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/edgar-X541UJ:@/tmp/.ICE-unix/1287,unix/edgar-X541UJ:/tmp/.ICE-unix/1287'), ('GDM_LANG', 'pt_PT'), ('GTK3_MODULES', 'xapp-gtk3-module'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'pt_PT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/edgar/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/edgar'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('XDG_VTNR', '7'), ('PWD', '/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/edgar/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('QT_FONT_DPI', '96'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[0.203476] (-) TimerEvent: {}
+[0.210221] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'cmake'}
+[0.212515] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'build'}
+[0.212600] (ldlidar_stl_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2', '--', '-j4', '-l4'], 'cwd': '/home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'pt:pt_BR:en'), ('USER', 'edgar'), ('XDG_SEAT', 'seat0'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mint'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/edgar'), ('DESKTOP_SESSION', 'mate'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'edgar'), ('WINDOWID', '65011718'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c2'), ('INSIDE_CAJA_PYTHON', ''), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/edgar-X541UJ:@/tmp/.ICE-unix/1287,unix/edgar-X541UJ:/tmp/.ICE-unix/1287'), ('GDM_LANG', 'pt_PT'), ('GTK3_MODULES', 'xapp-gtk3-module'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'pt_PT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/edgar/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/edgar'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('XDG_VTNR', '7'), ('PWD', '/home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/edgar/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('QT_FONT_DPI', '96'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[0.262670] (laser_consumer) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target laser_consumer\x1b[0m\n'}
+[0.291897] (laser_consumer) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/laser_consumer.dir/src/laser_consumer.cpp.o\x1b[0m\n'}
+[0.303643] (-) TimerEvent: {}
+[0.356668] (ldlidar_stl_ros2) StdoutLine: {'line': b'[100%] Built target ldlidar_stl_ros2_node\n'}
+[0.384198] (ldlidar_stl_ros2) CommandEnded: {'returncode': 0}
+[0.407469] (-) TimerEvent: {}
+[0.510441] (-) TimerEvent: {}
+[0.610990] (-) TimerEvent: {}
+[0.703983] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'install'}
+[0.715843] (-) TimerEvent: {}
+[0.735823] (ldlidar_stl_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2'], 'cwd': '/home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'pt:pt_BR:en'), ('USER', 'edgar'), ('XDG_SEAT', 'seat0'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mint'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/edgar'), ('DESKTOP_SESSION', 'mate'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'edgar'), ('WINDOWID', '65011718'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c2'), ('INSIDE_CAJA_PYTHON', ''), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/edgar-X541UJ:@/tmp/.ICE-unix/1287,unix/edgar-X541UJ:/tmp/.ICE-unix/1287'), ('GDM_LANG', 'pt_PT'), ('GTK3_MODULES', 'xapp-gtk3-module'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'pt_PT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/edgar/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/edgar'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('XDG_VTNR', '7'), ('PWD', '/home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/edgar/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('QT_FONT_DPI', '96'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[0.761029] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.761623] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.773867] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/lib/ldlidar_stl_ros2/ldlidar_stl_ros2_node\n'}
+[0.787712] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/ld06.launch.py\n'}
+[0.788015] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/ld19.launch.py\n'}
+[0.788238] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/stl27l.launch.py\n'}
+[0.788445] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_ld06.launch.py\n'}
+[0.788636] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_ld19.launch.py\n'}
+[0.788826] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_stl27l.launch.py\n'}
+[0.789133] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//rviz2/ldlidar.rviz\n'}
+[0.789472] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/package_run_dependencies/ldlidar_stl_ros2\n'}
+[0.789797] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/parent_prefix_path/ldlidar_stl_ros2\n'}
+[0.790079] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/ament_prefix_path.sh\n'}
+[0.790362] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/ament_prefix_path.dsv\n'}
+[0.790672] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/path.sh\n'}
+[0.790990] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/path.dsv\n'}
+[0.796346] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.bash\n'}
+[0.809942] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.sh\n'}
+[0.814754] (-) TimerEvent: {}
+[0.827837] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.zsh\n'}
+[0.842453] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.dsv\n'}
+[0.843319] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Symlinking: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.dsv\n'}
+[0.914868] (-) TimerEvent: {}
+[1.015426] (-) TimerEvent: {}
+[1.115928] (-) TimerEvent: {}
+[1.181177] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/packages/ldlidar_stl_ros2\n'}
+[1.182586] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/cmake/ldlidar_stl_ros2Config.cmake\n'}
+[1.182809] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/cmake/ldlidar_stl_ros2Config-version.cmake\n'}
+[1.183006] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.xml\n'}
+[1.199200] (ldlidar_stl_ros2) CommandEnded: {'returncode': 0}
+[1.216025] (-) TimerEvent: {}
+[1.321664] (-) TimerEvent: {}
+[1.423883] (-) TimerEvent: {}
+[1.526831] (-) TimerEvent: {}
+[1.672499] (-) TimerEvent: {}
+[1.779291] (-) TimerEvent: {}
+[1.881235] (-) TimerEvent: {}
+[1.934078] (ldlidar_stl_ros2) JobEnded: {'identifier': 'ldlidar_stl_ros2', 'rc': 0}
+[1.982088] (-) TimerEvent: {}
+[2.091765] (-) TimerEvent: {}
+[2.192105] (-) TimerEvent: {}
+[2.292451] (-) TimerEvent: {}
+[2.392815] (-) TimerEvent: {}
+[2.493190] (-) TimerEvent: {}
+[2.593541] (-) TimerEvent: {}
+[2.693909] (-) TimerEvent: {}
+[2.794242] (-) TimerEvent: {}
+[2.894588] (-) TimerEvent: {}
+[2.994932] (-) TimerEvent: {}
+[3.095309] (-) TimerEvent: {}
+[3.195648] (-) TimerEvent: {}
+[3.296005] (-) TimerEvent: {}
+[3.396359] (-) TimerEvent: {}
+[3.498969] (-) TimerEvent: {}
+[3.610194] (-) TimerEvent: {}
+[3.720086] (-) TimerEvent: {}
+[3.820431] (-) TimerEvent: {}
+[3.920788] (-) TimerEvent: {}
+[4.021144] (-) TimerEvent: {}
+[4.121496] (-) TimerEvent: {}
+[4.221853] (-) TimerEvent: {}
+[4.322222] (-) TimerEvent: {}
+[4.422551] (-) TimerEvent: {}
+[4.522896] (-) TimerEvent: {}
+[4.623223] (-) TimerEvent: {}
+[4.723614] (-) TimerEvent: {}
+[4.823966] (-) TimerEvent: {}
+[4.924311] (-) TimerEvent: {}
+[5.024668] (-) TimerEvent: {}
+[5.125017] (-) TimerEvent: {}
+[5.225359] (-) TimerEvent: {}
+[5.325717] (-) TimerEvent: {}
+[5.426077] (-) TimerEvent: {}
+[5.526425] (-) TimerEvent: {}
+[5.626758] (-) TimerEvent: {}
+[5.727125] (-) TimerEvent: {}
+[5.827503] (-) TimerEvent: {}
+[5.927843] (-) TimerEvent: {}
+[6.028198] (-) TimerEvent: {}
+[6.128573] (-) TimerEvent: {}
+[6.228922] (-) TimerEvent: {}
+[6.237642] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid LidarReader::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.237942] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:88:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.238133] (laser_consumer) StderrLine: {'line': b'   88 |             cv::line(\x1b[01;31m\x1b[Kimg\x1b[m\x1b[K, pt1, pt2, cv::Scalar(0, 0, 255), 1, cv::LINE_AA);\n'}
+[6.238315] (laser_consumer) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.247096] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimg\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.247365] (laser_consumer) StderrLine: {'line': b'   91 |         cv::imshow("Hough Lines", \x1b[01;31m\x1b[Kimg\x1b[m\x1b[K);\n'}
+[6.247511] (laser_consumer) StderrLine: {'line': b'      |                                   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.250915] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:21:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kimage_size\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.264671] (laser_consumer) StderrLine: {'line': b'   21 |       const int \x1b[01;35m\x1b[Kimage_size\x1b[m\x1b[K = 500;\n'}
+[6.264888] (laser_consumer) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.331456] (-) TimerEvent: {}
+[6.440662] (-) TimerEvent: {}
+[6.540996] (-) TimerEvent: {}
+[6.641371] (-) TimerEvent: {}
+[6.741735] (-) TimerEvent: {}
+[6.842084] (-) TimerEvent: {}
+[6.942430] (-) TimerEvent: {}
+[7.042787] (-) TimerEvent: {}
+[7.143164] (-) TimerEvent: {}
+[7.243506] (-) TimerEvent: {}
+[7.343860] (-) TimerEvent: {}
+[7.444210] (-) TimerEvent: {}
+[7.544559] (-) TimerEvent: {}
+[7.644910] (-) TimerEvent: {}
+[7.745290] (-) TimerEvent: {}
+[7.845636] (-) TimerEvent: {}
+[7.945991] (-) TimerEvent: {}
+[8.046341] (-) TimerEvent: {}
+[8.146677] (-) TimerEvent: {}
+[8.247026] (-) TimerEvent: {}
+[8.347389] (-) TimerEvent: {}
+[8.447726] (-) TimerEvent: {}
+[8.548053] (-) TimerEvent: {}
+[8.648383] (-) TimerEvent: {}
+[8.748708] (-) TimerEvent: {}
+[8.849041] (-) TimerEvent: {}
+[8.949335] (-) TimerEvent: {}
+[9.049630] (-) TimerEvent: {}
+[9.149909] (-) TimerEvent: {}
+[9.250199] (-) TimerEvent: {}
+[9.350500] (-) TimerEvent: {}
+[9.450791] (-) TimerEvent: {}
+[9.551212] (-) TimerEvent: {}
+[9.651526] (-) TimerEvent: {}
+[9.738410] (laser_consumer) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/laser_consumer.dir/build.make:76: CMakeFiles/laser_consumer.dir/src/laser_consumer.cpp.o] Error 1\n'}
+[9.738761] (laser_consumer) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/laser_consumer.dir/all] Error 2\n'}
+[9.739009] (laser_consumer) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[9.743548] (laser_consumer) CommandEnded: {'returncode': 2}
+[9.751606] (-) TimerEvent: {}
+[9.851834] (-) TimerEvent: {}
+[9.952116] (-) TimerEvent: {}
+[10.052385] (-) TimerEvent: {}
+[10.152698] (-) TimerEvent: {}
+[10.253041] (-) TimerEvent: {}
+[10.276088] (laser_consumer) JobEnded: {'identifier': 'laser_consumer', 'rc': 2}
+[10.277413] (-) EventReactorShutdown: {}

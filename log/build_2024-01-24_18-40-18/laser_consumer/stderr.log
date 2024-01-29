@@ -1,0 +1,13 @@
+[01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:[m[K In member function ‘[01m[Kvoid LidarReader::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:88:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kimg[m[K’ was not declared in this scope
+   88 |             cv::line([01;31m[Kimg[m[K, pt1, pt2, cv::Scalar(0, 0, 255), 1, cv::LINE_AA);
+      |                      [01;31m[K^~~[m[K
+[01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kimg[m[K’ was not declared in this scope
+   91 |         cv::imshow("Hough Lines", [01;31m[Kimg[m[K);
+      |                                   [01;31m[K^~~[m[K
+[01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:21:17:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kimage_size[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   21 |       const int [01;35m[Kimage_size[m[K = 500;
+      |                 [01;35m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/laser_consumer.dir/build.make:76: CMakeFiles/laser_consumer.dir/src/laser_consumer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/laser_consumer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

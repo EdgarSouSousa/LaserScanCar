@@ -1,0 +1,672 @@
+[0.000000] (-) TimerEvent: {}
+[0.000568] (laser_consumer) JobQueued: {'identifier': 'laser_consumer', 'dependencies': OrderedDict()}
+[0.000683] (ldlidar_stl_ros2) JobQueued: {'identifier': 'ldlidar_stl_ros2', 'dependencies': OrderedDict()}
+[0.000758] (laser_consumer) JobStarted: {'identifier': 'laser_consumer'}
+[0.058203] (ldlidar_stl_ros2) JobStarted: {'identifier': 'ldlidar_stl_ros2'}
+[0.099615] (-) TimerEvent: {}
+[0.183905] (laser_consumer) JobProgress: {'identifier': 'laser_consumer', 'progress': 'cmake'}
+[0.185018] (laser_consumer) JobProgress: {'identifier': 'laser_consumer', 'progress': 'build'}
+[0.186602] (laser_consumer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer', '--', '-j4', '-l4'], 'cwd': '/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'pt:pt_BR:en'), ('USER', 'edgar'), ('XDG_SEAT', 'seat0'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mint'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/edgar'), ('DESKTOP_SESSION', 'mate'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'edgar'), ('WINDOWID', '58720362'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c2'), ('INSIDE_CAJA_PYTHON', ''), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/edgar-X541UJ:@/tmp/.ICE-unix/1366,unix/edgar-X541UJ:/tmp/.ICE-unix/1366'), ('GDM_LANG', 'pt_PT'), ('GTK3_MODULES', 'xapp-gtk3-module'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'pt_PT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/edgar/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/edgar'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('XDG_VTNR', '7'), ('PWD', '/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/edgar/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('QT_FONT_DPI', '96'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[0.191701] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'cmake'}
+[0.192848] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'build'}
+[0.193332] (ldlidar_stl_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2', '--', '-j4', '-l4'], 'cwd': '/home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'pt:pt_BR:en'), ('USER', 'edgar'), ('XDG_SEAT', 'seat0'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mint'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/edgar'), ('DESKTOP_SESSION', 'mate'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'edgar'), ('WINDOWID', '58720362'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c2'), ('INSIDE_CAJA_PYTHON', ''), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/edgar-X541UJ:@/tmp/.ICE-unix/1366,unix/edgar-X541UJ:/tmp/.ICE-unix/1366'), ('GDM_LANG', 'pt_PT'), ('GTK3_MODULES', 'xapp-gtk3-module'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'pt_PT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/edgar/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/edgar'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('XDG_VTNR', '7'), ('PWD', '/home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/edgar/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('QT_FONT_DPI', '96'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[0.199727] (-) TimerEvent: {}
+[0.232589] (laser_consumer) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target laser_consumer\x1b[0m\n'}
+[0.267593] (laser_consumer) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/laser_consumer.dir/src/laser_consumer.cpp.o\x1b[0m\n'}
+[0.280368] (ldlidar_stl_ros2) StdoutLine: {'line': b'[100%] Built target ldlidar_stl_ros2_node\n'}
+[0.291227] (ldlidar_stl_ros2) CommandEnded: {'returncode': 0}
+[0.299832] (-) TimerEvent: {}
+[0.332781] (ldlidar_stl_ros2) JobProgress: {'identifier': 'ldlidar_stl_ros2', 'progress': 'install'}
+[0.341847] (ldlidar_stl_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2'], 'cwd': '/home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'pt:pt_BR:en'), ('USER', 'edgar'), ('XDG_SEAT', 'seat0'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mint'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/edgar'), ('DESKTOP_SESSION', 'mate'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'edgar'), ('WINDOWID', '58720362'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c2'), ('INSIDE_CAJA_PYTHON', ''), ('PATH', '/opt/ros/iron/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/edgar-X541UJ:@/tmp/.ICE-unix/1366,unix/edgar-X541UJ:/tmp/.ICE-unix/1366'), ('GDM_LANG', 'pt_PT'), ('GTK3_MODULES', 'xapp-gtk3-module'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'pt_PT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/edgar/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/edgar'), ('AMENT_PREFIX_PATH', '/opt/ros/iron'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('XDG_VTNR', '7'), ('PWD', '/home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/edgar/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('QT_FONT_DPI', '96'), ('CMAKE_PREFIX_PATH', '/opt/ros/iron')]), 'shell': False}
+[0.350054] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.350709] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.351204] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/lib/ldlidar_stl_ros2/ldlidar_stl_ros2_node\n'}
+[0.351832] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/ld06.launch.py\n'}
+[0.352082] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/ld19.launch.py\n'}
+[0.352385] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/stl27l.launch.py\n'}
+[0.352623] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_ld06.launch.py\n'}
+[0.352855] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_ld19.launch.py\n'}
+[0.353080] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_stl27l.launch.py\n'}
+[0.353459] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//rviz2/ldlidar.rviz\n'}
+[0.353798] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/package_run_dependencies/ldlidar_stl_ros2\n'}
+[0.354125] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/parent_prefix_path/ldlidar_stl_ros2\n'}
+[0.354441] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/ament_prefix_path.sh\n'}
+[0.354778] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/ament_prefix_path.dsv\n'}
+[0.355096] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/path.sh\n'}
+[0.355446] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/path.dsv\n'}
+[0.355903] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.bash\n'}
+[0.356160] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.sh\n'}
+[0.356464] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.zsh\n'}
+[0.356774] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.dsv\n'}
+[0.357041] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Symlinking: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.dsv\n'}
+[0.366255] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/packages/ldlidar_stl_ros2\n'}
+[0.366534] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/cmake/ldlidar_stl_ros2Config.cmake\n'}
+[0.366773] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/cmake/ldlidar_stl_ros2Config-version.cmake\n'}
+[0.367046] (ldlidar_stl_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.xml\n'}
+[0.369065] (ldlidar_stl_ros2) CommandEnded: {'returncode': 0}
+[0.399919] (-) TimerEvent: {}
+[0.500741] (-) TimerEvent: {}
+[0.552678] (ldlidar_stl_ros2) JobEnded: {'identifier': 'ldlidar_stl_ros2', 'rc': 0}
+[0.600869] (-) TimerEvent: {}
+[0.701146] (-) TimerEvent: {}
+[0.801422] (-) TimerEvent: {}
+[0.901814] (-) TimerEvent: {}
+[1.002179] (-) TimerEvent: {}
+[1.102549] (-) TimerEvent: {}
+[1.202883] (-) TimerEvent: {}
+[1.303255] (-) TimerEvent: {}
+[1.403598] (-) TimerEvent: {}
+[1.503985] (-) TimerEvent: {}
+[1.604362] (-) TimerEvent: {}
+[1.704745] (-) TimerEvent: {}
+[1.805116] (-) TimerEvent: {}
+[1.905471] (-) TimerEvent: {}
+[2.005810] (-) TimerEvent: {}
+[2.106165] (-) TimerEvent: {}
+[2.206526] (-) TimerEvent: {}
+[2.306879] (-) TimerEvent: {}
+[2.407247] (-) TimerEvent: {}
+[2.507621] (-) TimerEvent: {}
+[2.607983] (-) TimerEvent: {}
+[2.708362] (-) TimerEvent: {}
+[2.808737] (-) TimerEvent: {}
+[2.909089] (-) TimerEvent: {}
+[3.009454] (-) TimerEvent: {}
+[3.109813] (-) TimerEvent: {}
+[3.210198] (-) TimerEvent: {}
+[3.310562] (-) TimerEvent: {}
+[3.410900] (-) TimerEvent: {}
+[3.511213] (-) TimerEvent: {}
+[3.611547] (-) TimerEvent: {}
+[3.711884] (-) TimerEvent: {}
+[3.812224] (-) TimerEvent: {}
+[3.912548] (-) TimerEvent: {}
+[4.012880] (-) TimerEvent: {}
+[4.113204] (-) TimerEvent: {}
+[4.213508] (-) TimerEvent: {}
+[4.313827] (-) TimerEvent: {}
+[4.414155] (-) TimerEvent: {}
+[4.514483] (-) TimerEvent: {}
+[4.614807] (-) TimerEvent: {}
+[4.650698] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid LidarReader::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.651021] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator+=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99})\n'}
+[4.651132] (laser_consumer) StderrLine: {'line': b'   91 |         \x1b[01;31m\x1b[Kpt1 += center\x1b[m\x1b[K;\n'}
+[4.651380] (laser_consumer) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.651928] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:56\x1b[m\x1b[K,\n'}
+[4.652060] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.652223] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.652547] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1194:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp1, class _Tp2, int m, int n> cv::Matx<_Tp, m, n>& cv::operator+=(cv::Matx<_Tp, m, n>&, const cv::Matx<_Tp2, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.652885] (laser_consumer) StderrLine: {'line': b' 1194 | Matx<_Tp1, m, n>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Matx<_Tp1, m, n>& a, const Matx<_Tp2, m, n>& b)\n'}
+[4.653701] (laser_consumer) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.653885] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1194:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.654124] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.654549] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.654893] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.655037] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:56\x1b[m\x1b[K,\n'}
+[4.655830] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.656492] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.656696] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1350:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp1, class _Tp2, int cn> cv::Vec<_Tp, n>& cv::operator+=(cv::Vec<_Tp, n>&, const cv::Vec<_Tp2, cn>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.656811] (laser_consumer) StderrLine: {'line': b' 1350 | Vec<_Tp1, cn>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Vec<_Tp1, cn>& a, const Vec<_Tp2, cn>& b)\n'}
+[4.656922] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.657030] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1350:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.657138] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Vec<_Tp, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.657258] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.657365] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.657472] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.657580] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.657688] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.657796] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1047:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Complex<_Tp>& cv::operator+=(cv::Complex<_Tp>&, const cv::Complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.657912] (laser_consumer) StderrLine: {'line': b' 1047 | Complex<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Complex<_Tp>& a, const Complex<_Tp>& b)\n'}
+[4.658020] (laser_consumer) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.658127] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1047:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.658238] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.658357] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.658465] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.658576] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.658704] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.658819] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.658935] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1113:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Complex<_Tp>& cv::operator+=(cv::Complex<_Tp>&, _Tp)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.659052] (laser_consumer) StderrLine: {'line': b' 1113 | Complex<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Complex<_Tp>& a, _Tp b)\n'}
+[4.659168] (laser_consumer) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.659282] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1113:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.659398] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.659516] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.659635] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.659758] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.659869] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.659981] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.660110] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1251:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point_<_Tp>& cv::operator+=(cv::Point_<_Tp>&, const cv::Point_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.660225] (laser_consumer) StderrLine: {'line': b' 1251 | Point_<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Point_<_Tp>& a, const Point_<_Tp>& b)\n'}
+[4.660337] (laser_consumer) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.660447] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1251:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.660559] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[4.660673] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.660785] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.660897] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.661008] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.661119] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.661240] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1512:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point3_<_Tp>& cv::operator+=(cv::Point3_<_Tp>&, const cv::Point3_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.661330] (laser_consumer) StderrLine: {'line': b' 1512 | Point3_<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Point3_<_Tp>& a, const Point3_<_Tp>& b)\n'}
+[4.661398] (laser_consumer) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.661464] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1512:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.661530] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point3_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.661606] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.661672] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.661737] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.661807] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.661873] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.661939] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1791:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Size_<_Tp>& cv::operator+=(cv::Size_<_Tp>&, const cv::Size_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.662004] (laser_consumer) StderrLine: {'line': b' 1791 | Size_<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Size_<_Tp>& a, const Size_<_Tp>& b)\n'}
+[4.662069] (laser_consumer) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.662138] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1791:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.662226] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Size_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.662296] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.662360] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.662424] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.662488] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.662552] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.662616] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1934:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Rect_<_Tp>& cv::operator+=(cv::Rect_<_Tp>&, const cv::Point_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.662682] (laser_consumer) StderrLine: {'line': b' 1934 | Rect_<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += ( Rect_<_Tp>& a, const Point_<_Tp>& b )\n'}
+[4.662747] (laser_consumer) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.662810] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1934:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.662875] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Rect_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.662941] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.663005] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.663070] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.663134] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.663197] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.663266] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1950:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Rect_<_Tp>& cv::operator+=(cv::Rect_<_Tp>&, const cv::Size_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.663332] (laser_consumer) StderrLine: {'line': b' 1950 | Rect_<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += ( Rect_<_Tp>& a, const Size_<_Tp>& b )\n'}
+[4.663397] (laser_consumer) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.663460] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1950:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.663525] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Rect_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.663606] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.663685] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.663806] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.663921] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.664039] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.664121] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2272:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Scalar_<_Tp>& cv::operator+=(cv::Scalar_<_Tp>&, const cv::Scalar_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.664197] (laser_consumer) StderrLine: {'line': b' 2272 | Scalar_<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Scalar_<_Tp>& a, const Scalar_<_Tp>& b)\n'}
+[4.664265] (laser_consumer) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.664333] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2272:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.664400] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Scalar_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.664470] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.664537] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.664604] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[4.664670] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[4.664737] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.664808] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.664879] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3149:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.664952] (laser_consumer) StderrLine: {'line': b' 3149 | Mat_<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Mat_<_Tp>& a, const MatExpr& b)\n'}
+[4.665020] (laser_consumer) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.665086] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3149:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.665154] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.665223] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.665290] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.665356] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[4.665422] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[4.665488] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.665555] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.665622] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3156:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.665690] (laser_consumer) StderrLine: {'line': b' 3156 | const Mat_<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (const Mat_<_Tp>& a, const MatExpr& b)\n'}
+[4.665757] (laser_consumer) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.665825] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3156:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.665893] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.665964] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.666030] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.666096] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.666162] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.666228] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.666301] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:271:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.666370] (laser_consumer) StderrLine: {'line': b'  271 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_T\x1b[m\x1b[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Mat)\n'}
+[4.666440] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.666506] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:271:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.666573] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.666655] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.666719] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.666782] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.666845] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.666909] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.666973] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:271:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.667037] (laser_consumer) StderrLine: {'line': b'  271 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_T\x1b[m\x1b[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Mat)\n'}
+[4.667102] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.667165] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:271:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.667233] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.667305] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.667370] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.667435] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.667498] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.667563] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.667642] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:272:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const Scalar&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.667714] (laser_consumer) StderrLine: {'line': b'  272 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_T\x1b[m\x1b[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Scalar)\n'}
+[4.667781] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.667845] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:272:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.667912] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.667980] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.668064] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.668134] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.668203] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.668269] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.668337] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:272:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const Scalar&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.668405] (laser_consumer) StderrLine: {'line': b'  272 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_T\x1b[m\x1b[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Scalar)\n'}
+[4.668471] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.668538] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:272:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.668607] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.668682] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.668749] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.668816] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.668882] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.668947] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.669013] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:273:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const cv::Mat_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.669086] (laser_consumer) StderrLine: {'line': b'  273 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_T\x1b[m\x1b[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Mat_<_Tp>)\n'}
+[4.669152] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.669218] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:273:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.669285] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.669353] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.669420] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.669485] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.669550] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.669616] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.669682] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:273:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const cv::Mat_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.669755] (laser_consumer) StderrLine: {'line': b'  273 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_T\x1b[m\x1b[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Mat_<_Tp>)\n'}
+[4.669826] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.669891] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:273:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.669957] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.670025] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.670091] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.670157] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.670222] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.670288] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.670354] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:274:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::Mat& cv::operator+=(cv::Mat&, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.670422] (laser_consumer) StderrLine: {'line': b'  274 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_TN\x1b[m\x1b[K(+=, cv::add(a, Mat(b), (const Mat&)a), Mat)\n'}
+[4.670493] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.670558] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:274:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.670625] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.670693] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.670761] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.670826] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.670892] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.670962] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.671030] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:274:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> const cv::Mat& cv::operator+=(const cv::Mat&, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.671098] (laser_consumer) StderrLine: {'line': b'  274 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_TN\x1b[m\x1b[K(+=, cv::add(a, Mat(b), (const Mat&)a), Mat)\n'}
+[4.671166] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.671233] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:274:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.671300] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.671369] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.671436] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.671503] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.671569] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.671635] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.671702] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:275:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.671769] (laser_consumer) StderrLine: {'line': b'  275 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_TN\x1b[m\x1b[K(+=, cv::add(a, Mat(b), (const Mat&)a), Mat_<_Tp>)\n'}
+[4.671836] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.671903] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:275:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.671974] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.672079] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.672149] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.672215] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.672287] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.672354] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.672421] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:275:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.672489] (laser_consumer) StderrLine: {'line': b'  275 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_TN\x1b[m\x1b[K(+=, cv::add(a, Mat(b), (const Mat&)a), Mat_<_Tp>)\n'}
+[4.672555] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.672621] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:275:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.672687] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.672757] (laser_consumer) StderrLine: {'line': b'   91 |         pt1 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.672823] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.672888] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[4.672954] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[4.673020] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.673086] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.673152] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3135:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat& cv::operator+=(cv::Mat&, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.673223] (laser_consumer) StderrLine: {'line': b' 3135 | Mat& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Mat& a, const MatExpr& b)\n'}
+[4.673289] (laser_consumer) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.673355] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3135:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.673429] (laser_consumer) StderrLine: {'line': b' 3135 | Mat& operator += (\x1b[01;36m\x1b[KMat& a\x1b[m\x1b[K, const MatExpr& b)\n'}
+[4.673495] (laser_consumer) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K~~~~~^\x1b[m\x1b[K\n'}
+[4.673561] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3142:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat& cv::operator+=(const cv::Mat&, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.673644] (laser_consumer) StderrLine: {'line': b' 3142 | const Mat& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (const Mat& a, const MatExpr& b)\n'}
+[4.673712] (laser_consumer) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.673779] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3142:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.673849] (laser_consumer) StderrLine: {'line': b' 3142 | const Mat& operator += (\x1b[01;36m\x1b[Kconst Mat& a\x1b[m\x1b[K, const MatExpr& b)\n'}
+[4.673917] (laser_consumer) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[4.673986] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.674054] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.674121] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.674194] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:269:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat& cv::operator+=(cv::Mat&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.674263] (laser_consumer) StderrLine: {'line': b'  269 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR\x1b[m\x1b[K  (+=, cv::add(a, b, (const Mat&)a), Mat, Mat)\n'}
+[4.674331] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.674399] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:269:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.674469] (laser_consumer) StderrLine: {'line': b'  269 | \x1b[01;36m\x1b[KC\x1b[m\x1b[KV_MAT_AUG_OPERATOR  (+=, cv::add(a, b, (const Mat&)a), Mat, Mat)\n'}
+[4.674537] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.674605] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:269:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat& cv::operator+=(const cv::Mat&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.674679] (laser_consumer) StderrLine: {'line': b'  269 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR\x1b[m\x1b[K  (+=, cv::add(a, b, (const Mat&)a), Mat, Mat)\n'}
+[4.674748] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.674823] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:269:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.674893] (laser_consumer) StderrLine: {'line': b'  269 | \x1b[01;36m\x1b[KC\x1b[m\x1b[KV_MAT_AUG_OPERATOR  (+=, cv::add(a, b, (const Mat&)a), Mat, Mat)\n'}
+[4.674962] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.675029] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:270:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat& cv::operator+=(cv::Mat&, const Scalar&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.675098] (laser_consumer) StderrLine: {'line': b'  270 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR\x1b[m\x1b[K  (+=, cv::add(a, b, (const Mat&)a), Mat, Scalar)\n'}
+[4.675166] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.675233] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:270:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.675303] (laser_consumer) StderrLine: {'line': b'  270 | \x1b[01;36m\x1b[KC\x1b[m\x1b[KV_MAT_AUG_OPERATOR  (+=, cv::add(a, b, (const Mat&)a), Mat, Scalar)\n'}
+[4.675371] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.675439] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:270:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat& cv::operator+=(const cv::Mat&, const Scalar&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.675508] (laser_consumer) StderrLine: {'line': b'  270 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR\x1b[m\x1b[K  (+=, cv::add(a, b, (const Mat&)a), Mat, Scalar)\n'}
+[4.675583] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.675652] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:270:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.675723] (laser_consumer) StderrLine: {'line': b'  270 | \x1b[01;36m\x1b[KC\x1b[m\x1b[KV_MAT_AUG_OPERATOR  (+=, cv::add(a, b, (const Mat&)a), Mat, Scalar)\n'}
+[4.675791] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.675863] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator+=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99})\n'}
+[4.675938] (laser_consumer) StderrLine: {'line': b'   92 |         \x1b[01;31m\x1b[Kpt2 += center\x1b[m\x1b[K;\n'}
+[4.676007] (laser_consumer) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.676086] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:56\x1b[m\x1b[K,\n'}
+[4.676156] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.676234] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.676303] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1194:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp1, class _Tp2, int m, int n> cv::Matx<_Tp, m, n>& cv::operator+=(cv::Matx<_Tp, m, n>&, const cv::Matx<_Tp2, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.676377] (laser_consumer) StderrLine: {'line': b' 1194 | Matx<_Tp1, m, n>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Matx<_Tp1, m, n>& a, const Matx<_Tp2, m, n>& b)\n'}
+[4.676446] (laser_consumer) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.676514] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1194:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.676583] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.676667] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.676733] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.676799] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:56\x1b[m\x1b[K,\n'}
+[4.676864] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.676930] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.676996] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1350:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp1, class _Tp2, int cn> cv::Vec<_Tp, n>& cv::operator+=(cv::Vec<_Tp, n>&, const cv::Vec<_Tp2, cn>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.677064] (laser_consumer) StderrLine: {'line': b' 1350 | Vec<_Tp1, cn>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Vec<_Tp1, cn>& a, const Vec<_Tp2, cn>& b)\n'}
+[4.677134] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.677200] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/matx.hpp:1350:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.677271] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Vec<_Tp, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.677340] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.677407] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.677472] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.677539] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.677609] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.677675] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1047:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Complex<_Tp>& cv::operator+=(cv::Complex<_Tp>&, const cv::Complex<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.677743] (laser_consumer) StderrLine: {'line': b' 1047 | Complex<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Complex<_Tp>& a, const Complex<_Tp>& b)\n'}
+[4.677809] (laser_consumer) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.677877] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1047:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.677943] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.678012] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.678078] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.678143] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.678208] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.678275] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.678340] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1113:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Complex<_Tp>& cv::operator+=(cv::Complex<_Tp>&, _Tp)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.678408] (laser_consumer) StderrLine: {'line': b' 1113 | Complex<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Complex<_Tp>& a, _Tp b)\n'}
+[4.678474] (laser_consumer) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.678538] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1113:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.678618] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Complex<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.678689] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.678756] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.678823] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.678937] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.679115] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.679305] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1251:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point_<_Tp>& cv::operator+=(cv::Point_<_Tp>&, const cv::Point_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.679449] (laser_consumer) StderrLine: {'line': b' 1251 | Point_<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Point_<_Tp>& a, const Point_<_Tp>& b)\n'}
+[4.679579] (laser_consumer) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.679708] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1251:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.679838] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  deduced conflicting types for parameter \xe2\x80\x98\x1b[01m\x1b[K_Tp\x1b[m\x1b[K\xe2\x80\x99 (\xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[4.679972] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.680076] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.680148] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.680221] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.680290] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.680365] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1512:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Point3_<_Tp>& cv::operator+=(cv::Point3_<_Tp>&, const cv::Point3_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.680441] (laser_consumer) StderrLine: {'line': b' 1512 | Point3_<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Point3_<_Tp>& a, const Point3_<_Tp>& b)\n'}
+[4.680510] (laser_consumer) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.680577] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1512:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.680659] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point3_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.680729] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.680799] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.680865] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.680930] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.680996] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.681061] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1791:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Size_<_Tp>& cv::operator+=(cv::Size_<_Tp>&, const cv::Size_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.681132] (laser_consumer) StderrLine: {'line': b' 1791 | Size_<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Size_<_Tp>& a, const Size_<_Tp>& b)\n'}
+[4.681198] (laser_consumer) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.681262] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1791:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.681327] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Size_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.681398] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.681463] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.681528] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.681594] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.681658] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.681723] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1934:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Rect_<_Tp>& cv::operator+=(cv::Rect_<_Tp>&, const cv::Point_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.681789] (laser_consumer) StderrLine: {'line': b' 1934 | Rect_<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += ( Rect_<_Tp>& a, const Point_<_Tp>& b )\n'}
+[4.681854] (laser_consumer) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.681919] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1934:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.681984] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Rect_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.682052] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.682117] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.682181] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.682246] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.682312] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.682376] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1950:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Rect_<_Tp>& cv::operator+=(cv::Rect_<_Tp>&, const cv::Size_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.682442] (laser_consumer) StderrLine: {'line': b' 1950 | Rect_<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += ( Rect_<_Tp>& a, const Size_<_Tp>& b )\n'}
+[4.682512] (laser_consumer) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.682577] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:1950:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.682642] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Rect_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.682713] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.682777] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.682844] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:57\x1b[m\x1b[K,\n'}
+[4.682908] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.682972] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.683035] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2272:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Scalar_<_Tp>& cv::operator+=(cv::Scalar_<_Tp>&, const cv::Scalar_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.683104] (laser_consumer) StderrLine: {'line': b' 2272 | Scalar_<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Scalar_<_Tp>& a, const Scalar_<_Tp>& b)\n'}
+[4.683168] (laser_consumer) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.683231] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/types.hpp:2272:15:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.683295] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Scalar_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.683362] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.683425] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.683488] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[4.683552] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[4.683630] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.683695] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.683762] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3149:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.683830] (laser_consumer) StderrLine: {'line': b' 3149 | Mat_<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Mat_<_Tp>& a, const MatExpr& b)\n'}
+[4.683896] (laser_consumer) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.683967] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3149:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.684063] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.684139] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.684206] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.684273] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[4.684340] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[4.684407] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.684473] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.684539] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3156:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.684608] (laser_consumer) StderrLine: {'line': b' 3156 | const Mat_<_Tp>& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (const Mat_<_Tp>& a, const MatExpr& b)\n'}
+[4.684685] (laser_consumer) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.684749] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3156:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.684813] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.684881] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.684945] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.685008] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.685071] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.685135] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.685200] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:271:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.685272] (laser_consumer) StderrLine: {'line': b'  271 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_T\x1b[m\x1b[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Mat)\n'}
+[4.685341] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.685412] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:271:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.685483] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.685550] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.685628] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.685694] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.685761] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.685826] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.685893] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:271:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.685960] (laser_consumer) StderrLine: {'line': b'  271 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_T\x1b[m\x1b[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Mat)\n'}
+[4.686027] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.686094] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:271:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.686160] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.686230] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.686297] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.686363] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.686430] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.686498] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.686565] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:272:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const Scalar&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.686645] (laser_consumer) StderrLine: {'line': b'  272 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_T\x1b[m\x1b[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Scalar)\n'}
+[4.686710] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.686774] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:272:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.686844] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.686913] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.686977] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.687041] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.687106] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.687170] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.687235] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:272:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const Scalar&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.687301] (laser_consumer) StderrLine: {'line': b'  272 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_T\x1b[m\x1b[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Scalar)\n'}
+[4.687365] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.687429] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:272:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.687495] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.687563] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.687650] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.687717] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.687784] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.687855] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.687923] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:273:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const cv::Mat_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.687992] (laser_consumer) StderrLine: {'line': b'  273 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_T\x1b[m\x1b[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Mat_<_Tp>)\n'}
+[4.688087] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.688157] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:273:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.688225] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.688302] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.688369] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.688436] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.688504] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.688571] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.688639] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:273:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const cv::Mat_<_Tp>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.688708] (laser_consumer) StderrLine: {'line': b'  273 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_T\x1b[m\x1b[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Mat_<_Tp>)\n'}
+[4.688776] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.688842] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:273:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.688909] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.688979] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.689046] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.689112] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.689179] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.689246] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.689314] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:274:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::Mat& cv::operator+=(cv::Mat&, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.689382] (laser_consumer) StderrLine: {'line': b'  274 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_TN\x1b[m\x1b[K(+=, cv::add(a, Mat(b), (const Mat&)a), Mat)\n'}
+[4.689490] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.689572] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:274:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.689642] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.689721] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.689788] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.689854] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.689922] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.689989] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.690055] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:274:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> const cv::Mat& cv::operator+=(const cv::Mat&, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.690128] (laser_consumer) StderrLine: {'line': b'  274 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_TN\x1b[m\x1b[K(+=, cv::add(a, Mat(b), (const Mat&)a), Mat)\n'}
+[4.690196] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.690266] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:274:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.690332] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<int>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Matx<_Tp, m, n>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.690408] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.690475] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.690542] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.690609] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.690676] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.690743] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:275:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.690812] (laser_consumer) StderrLine: {'line': b'  275 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_TN\x1b[m\x1b[K(+=, cv::add(a, Mat(b), (const Mat&)a), Mat_<_Tp>)\n'}
+[4.690879] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.690945] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:275:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.691012] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.691085] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.691152] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.691218] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.691285] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.691352] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.691419] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:275:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int m, int n> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const cv::Matx<_Tp, m, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.691487] (laser_consumer) StderrLine: {'line': b'  275 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR_TN\x1b[m\x1b[K(+=, cv::add(a, Mat(b), (const Mat&)a), Mat_<_Tp>)\n'}
+[4.691554] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.691621] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:275:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.691688] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat_<_Tp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.691758] (laser_consumer) StderrLine: {'line': b'   92 |         pt2 += \x1b[01;36m\x1b[Kcenter\x1b[m\x1b[K;\n'}
+[4.691825] (laser_consumer) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.691891] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3764\x1b[m\x1b[K,\n'}
+[4.691957] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:58\x1b[m\x1b[K,\n'}
+[4.692039] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.692113] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.692179] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3135:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat& cv::operator+=(cv::Mat&, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.692247] (laser_consumer) StderrLine: {'line': b' 3135 | Mat& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (Mat& a, const MatExpr& b)\n'}
+[4.692313] (laser_consumer) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.692384] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3135:24:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.692454] (laser_consumer) StderrLine: {'line': b' 3135 | Mat& operator += (\x1b[01;36m\x1b[KMat& a\x1b[m\x1b[K, const MatExpr& b)\n'}
+[4.692521] (laser_consumer) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K~~~~~^\x1b[m\x1b[K\n'}
+[4.692587] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3142:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat& cv::operator+=(const cv::Mat&, const cv::MatExpr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.692661] (laser_consumer) StderrLine: {'line': b' 3142 | const Mat& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K += (const Mat& a, const MatExpr& b)\n'}
+[4.692732] (laser_consumer) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.692798] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3142:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.692873] (laser_consumer) StderrLine: {'line': b' 3142 | const Mat& operator += (\x1b[01;36m\x1b[Kconst Mat& a\x1b[m\x1b[K, const MatExpr& b)\n'}
+[4.692939] (laser_consumer) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[4.693006] (laser_consumer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:3305\x1b[m\x1b[K,\n'}
+[4.693073] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.693139] (laser_consumer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4\x1b[m\x1b[K:\n'}
+[4.693206] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:269:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat& cv::operator+=(cv::Mat&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.693273] (laser_consumer) StderrLine: {'line': b'  269 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR\x1b[m\x1b[K  (+=, cv::add(a, b, (const Mat&)a), Mat, Mat)\n'}
+[4.693340] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.693407] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:269:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.693477] (laser_consumer) StderrLine: {'line': b'  269 | \x1b[01;36m\x1b[KC\x1b[m\x1b[KV_MAT_AUG_OPERATOR  (+=, cv::add(a, b, (const Mat&)a), Mat, Mat)\n'}
+[4.693544] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.693611] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:269:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat& cv::operator+=(const cv::Mat&, const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.693678] (laser_consumer) StderrLine: {'line': b'  269 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR\x1b[m\x1b[K  (+=, cv::add(a, b, (const Mat&)a), Mat, Mat)\n'}
+[4.693748] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.693814] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:269:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.693884] (laser_consumer) StderrLine: {'line': b'  269 | \x1b[01;36m\x1b[KC\x1b[m\x1b[KV_MAT_AUG_OPERATOR  (+=, cv::add(a, b, (const Mat&)a), Mat, Mat)\n'}
+[4.693951] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.694022] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:270:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat& cv::operator+=(cv::Mat&, const Scalar&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.694093] (laser_consumer) StderrLine: {'line': b'  270 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR\x1b[m\x1b[K  (+=, cv::add(a, b, (const Mat&)a), Mat, Scalar)\n'}
+[4.694160] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.694227] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:270:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.694296] (laser_consumer) StderrLine: {'line': b'  270 | \x1b[01;36m\x1b[KC\x1b[m\x1b[KV_MAT_AUG_OPERATOR  (+=, cv::add(a, b, (const Mat&)a), Mat, Scalar)\n'}
+[4.694363] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.694430] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:270:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat& cv::operator+=(const cv::Mat&, const Scalar&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.694499] (laser_consumer) StderrLine: {'line': b'  270 | \x1b[01;36m\x1b[KCV_MAT_AUG_OPERATOR\x1b[m\x1b[K  (+=, cv::add(a, b, (const Mat&)a), Mat, Scalar)\n'}
+[4.694566] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.694634] (laser_consumer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/operations.hpp:270:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kcv::Point2f\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kcv::Point_<float>\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.694708] (laser_consumer) StderrLine: {'line': b'  270 | \x1b[01;36m\x1b[KC\x1b[m\x1b[KV_MAT_AUG_OPERATOR  (+=, cv::add(a, b, (const Mat&)a), Mat, Scalar)\n'}
+[4.694775] (laser_consumer) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.714926] (-) TimerEvent: {}
+[4.815206] (-) TimerEvent: {}
+[4.915496] (-) TimerEvent: {}
+[5.015796] (-) TimerEvent: {}
+[5.116103] (-) TimerEvent: {}
+[5.216382] (-) TimerEvent: {}
+[5.316670] (-) TimerEvent: {}
+[5.416964] (-) TimerEvent: {}
+[5.517252] (-) TimerEvent: {}
+[5.617564] (-) TimerEvent: {}
+[5.717857] (-) TimerEvent: {}
+[5.818128] (-) TimerEvent: {}
+[5.918426] (-) TimerEvent: {}
+[6.018688] (-) TimerEvent: {}
+[6.118995] (-) TimerEvent: {}
+[6.219298] (-) TimerEvent: {}
+[6.319587] (-) TimerEvent: {}
+[6.419878] (-) TimerEvent: {}
+[6.520144] (-) TimerEvent: {}
+[6.620422] (-) TimerEvent: {}
+[6.720710] (-) TimerEvent: {}
+[6.821014] (-) TimerEvent: {}
+[6.921308] (-) TimerEvent: {}
+[7.021602] (-) TimerEvent: {}
+[7.121897] (-) TimerEvent: {}
+[7.222213] (-) TimerEvent: {}
+[7.322498] (-) TimerEvent: {}
+[7.422788] (-) TimerEvent: {}
+[7.523207] (-) TimerEvent: {}
+[7.623784] (-) TimerEvent: {}
+[7.724072] (-) TimerEvent: {}
+[7.824335] (-) TimerEvent: {}
+[7.924658] (-) TimerEvent: {}
+[8.024950] (-) TimerEvent: {}
+[8.125239] (-) TimerEvent: {}
+[8.225502] (-) TimerEvent: {}
+[8.325833] (-) TimerEvent: {}
+[8.426128] (-) TimerEvent: {}
+[8.510358] (laser_consumer) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/laser_consumer.dir/build.make:76: CMakeFiles/laser_consumer.dir/src/laser_consumer.cpp.o] Error 1\n'}
+[8.510702] (laser_consumer) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/laser_consumer.dir/all] Error 2\n'}
+[8.510969] (laser_consumer) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.512777] (laser_consumer) CommandEnded: {'returncode': 2}
+[8.526216] (-) TimerEvent: {}
+[8.605343] (laser_consumer) JobEnded: {'identifier': 'laser_consumer', 'rc': 2}
+[8.617964] (-) EventReactorShutdown: {}

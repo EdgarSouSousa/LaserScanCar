@@ -1,0 +1,21 @@
+[01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:[m[K In constructor ‘[01m[KLidarReader::LidarReader()[m[K’:
+[01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:8:45:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KLidarReader[m[K’ does not have any field named ‘[01m[Kcount_[m[K’
+    8 |     LidarReader() : Node("ldlidar_reader"), [01;31m[Kcount_[m[K(0)
+      |                                             [01;31m[K^~~~~~[m[K
+[01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:11:83:[m[K [01;31m[Kerror: [m[K‘[01m[K_1[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::placeholders::_1[m[K’?
+   11 |             "/your_topic_name", 10, std::bind(&LidarReader::topic_callback, this, [01;31m[K_1[m[K));
+      |                                                                                   [01;31m[K^~[m[K
+      |                                                                                   [32m[Kstd::placeholders::_1[m[K
+In file included from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+                 from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/iron/include/rclcpp/rclcpp/rclcpp.hpp:167[m[K,
+                 from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:1[m[K:
+[01m[K/usr/include/c++/11/functional:225:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::placeholders::_1[m[K’ declared here
+  225 |     extern const _Placeholder<1> [01;36m[K_1[m[K;
+      |                                  [01;36m[K^~[m[K
+gmake[2]: *** [CMakeFiles/laser_consumer.dir/build.make:76: CMakeFiles/laser_consumer.dir/src/laser_consumer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/laser_consumer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

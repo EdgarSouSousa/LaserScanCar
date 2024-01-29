@@ -1,0 +1,26 @@
+[0.127s] Invoking command in '/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer -- -j4 -l4
+[0.176s] [35m[1mConsolidate compiler generated dependencies of target laser_consumer[0m
+[0.200s] [ 50%] [32mBuilding CXX object CMakeFiles/laser_consumer.dir/src/laser_consumer.cpp.o[0m
+[10.385s] [100%] [32m[1mLinking CXX executable laser_consumer[0m
+[11.208s] [100%] Built target laser_consumer
+[11.233s] Invoked command in '/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer -- -j4 -l4
+[11.258s] Invoking command in '/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer
+[11.265s] -- Install configuration: ""
+[11.265s] -- Execute custom install script
+[11.266s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/lib/laser_consumer/laser_consumer
+[11.266s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/ament_index/resource_index/package_run_dependencies/laser_consumer
+[11.266s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/ament_index/resource_index/parent_prefix_path/laser_consumer
+[11.267s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/environment/ament_prefix_path.sh
+[11.267s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/environment/ament_prefix_path.dsv
+[11.267s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/environment/path.sh
+[11.268s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/environment/path.dsv
+[11.268s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/local_setup.bash
+[11.268s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/local_setup.sh
+[11.269s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/local_setup.zsh
+[11.269s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/local_setup.dsv
+[11.269s] -- Symlinking: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/package.dsv
+[11.278s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/ament_index/resource_index/packages/laser_consumer
+[11.278s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/cmake/laser_consumerConfig.cmake
+[11.278s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/cmake/laser_consumerConfig-version.cmake
+[11.279s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/package.xml
+[11.281s] Invoked command in '/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer

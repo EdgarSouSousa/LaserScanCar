@@ -1,0 +1,11 @@
+[0.259s] Invoking command in '/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer -- -j4 -l4
+[0.318s] [35m[1mConsolidate compiler generated dependencies of target laser_consumer[0m
+[0.354s] [ 50%] [32mBuilding CXX object CMakeFiles/laser_consumer.dir/src/laser_consumer.cpp.o[0m
+[6.237s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:[m[K In member function ‘[01m[Kvoid LidarReader::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[6.237s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:50:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ktest[m[K’ was not declared in this scope
+[6.237s]    50 |     cv::imshow("Hough Lines", [01;31m[Ktest[m[K);
+[6.237s]       |                               [01;31m[K^~~~[m[K
+[9.517s] gmake[2]: *** [CMakeFiles/laser_consumer.dir/build.make:76: CMakeFiles/laser_consumer.dir/src/laser_consumer.cpp.o] Error 1
+[9.517s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/laser_consumer.dir/all] Error 2
+[9.517s] gmake: *** [Makefile:146: all] Error 2
+[9.522s] Invoked command in '/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer' returned '2': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer -- -j4 -l4

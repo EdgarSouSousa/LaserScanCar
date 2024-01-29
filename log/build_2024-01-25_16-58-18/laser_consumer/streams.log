@@ -1,0 +1,544 @@
+[0.187s] Invoking command in '/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer -- -j4 -l4
+[0.232s] [35m[1mConsolidate compiler generated dependencies of target laser_consumer[0m
+[0.267s] [ 50%] [32mBuilding CXX object CMakeFiles/laser_consumer.dir/src/laser_consumer.cpp.o[0m
+[4.650s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:[m[K In member function ‘[01m[Kvoid LidarReader::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.650s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:13:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+=[m[K’ (operand types are ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} and ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’})
+[4.650s]    91 |         [01;31m[Kpt1 += center[m[K;
+[4.651s]       |         [01;31m[K~~~~^~~~~~~~~[m[K
+[4.651s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:56[m[K,
+[4.651s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.652s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.652s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1194:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp1, class _Tp2, int m, int n> cv::Matx<_Tp, m, n>& cv::operator+=(cv::Matx<_Tp, m, n>&, const cv::Matx<_Tp2, m, n>&)[m[K’
+[4.653s]  1194 | Matx<_Tp1, m, n>& [01;36m[Koperator[m[K += (Matx<_Tp1, m, n>& a, const Matx<_Tp2, m, n>& b)
+[4.653s]       |                   [01;36m[K^~~~~~~~[m[K
+[4.653s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1194:19:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.654s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Matx<_Tp, m, n>[m[K’
+[4.654s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.654s]       |                [01;36m[K^~~~~~[m[K
+[4.655s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:56[m[K,
+[4.655s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.656s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.656s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1350:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp1, class _Tp2, int cn> cv::Vec<_Tp, n>& cv::operator+=(cv::Vec<_Tp, n>&, const cv::Vec<_Tp2, cn>&)[m[K’
+[4.656s]  1350 | Vec<_Tp1, cn>& [01;36m[Koperator[m[K += (Vec<_Tp1, cn>& a, const Vec<_Tp2, cn>& b)
+[4.656s]       |                [01;36m[K^~~~~~~~[m[K
+[4.656s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1350:16:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.656s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Vec<_Tp, n>[m[K’
+[4.656s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.657s]       |                [01;36m[K^~~~~~[m[K
+[4.657s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.657s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.657s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.657s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1047:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Complex<_Tp>& cv::operator+=(cv::Complex<_Tp>&, const cv::Complex<_Tp>&)[m[K’
+[4.657s]  1047 | Complex<_Tp>& [01;36m[Koperator[m[K += (Complex<_Tp>& a, const Complex<_Tp>& b)
+[4.657s]       |               [01;36m[K^~~~~~~~[m[K
+[4.657s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1047:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.657s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Complex<_Tp>[m[K’
+[4.658s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.658s]       |                [01;36m[K^~~~~~[m[K
+[4.658s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.658s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.658s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.658s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1113:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Complex<_Tp>& cv::operator+=(cv::Complex<_Tp>&, _Tp)[m[K’
+[4.658s]  1113 | Complex<_Tp>& [01;36m[Koperator[m[K += (Complex<_Tp>& a, _Tp b)
+[4.658s]       |               [01;36m[K^~~~~~~~[m[K
+[4.659s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1113:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.659s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Complex<_Tp>[m[K’
+[4.659s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.659s]       |                [01;36m[K^~~~~~[m[K
+[4.659s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.659s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.659s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.659s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1251:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point_<_Tp>& cv::operator+=(cv::Point_<_Tp>&, const cv::Point_<_Tp>&)[m[K’
+[4.659s]  1251 | Point_<_Tp>& [01;36m[Koperator[m[K += (Point_<_Tp>& a, const Point_<_Tp>& b)
+[4.660s]       |              [01;36m[K^~~~~~~~[m[K
+[4.660s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1251:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.660s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[K_Tp[m[K’ (‘[01m[Kfloat[m[K’ and ‘[01m[Kint[m[K’)
+[4.660s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.660s]       |                [01;36m[K^~~~~~[m[K
+[4.660s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.660s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.660s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.660s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1512:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point3_<_Tp>& cv::operator+=(cv::Point3_<_Tp>&, const cv::Point3_<_Tp>&)[m[K’
+[4.661s]  1512 | Point3_<_Tp>& [01;36m[Koperator[m[K += (Point3_<_Tp>& a, const Point3_<_Tp>& b)
+[4.661s]       |               [01;36m[K^~~~~~~~[m[K
+[4.661s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1512:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.661s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Point3_<_Tp>[m[K’
+[4.661s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.661s]       |                [01;36m[K^~~~~~[m[K
+[4.661s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.661s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.661s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.661s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1791:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Size_<_Tp>& cv::operator+=(cv::Size_<_Tp>&, const cv::Size_<_Tp>&)[m[K’
+[4.661s]  1791 | Size_<_Tp>& [01;36m[Koperator[m[K += (Size_<_Tp>& a, const Size_<_Tp>& b)
+[4.661s]       |             [01;36m[K^~~~~~~~[m[K
+[4.661s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1791:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.661s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Size_<_Tp>[m[K’
+[4.661s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.662s]       |                [01;36m[K^~~~~~[m[K
+[4.662s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.662s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.662s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.662s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1934:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Rect_<_Tp>& cv::operator+=(cv::Rect_<_Tp>&, const cv::Point_<_Tp>&)[m[K’
+[4.662s]  1934 | Rect_<_Tp>& [01;36m[Koperator[m[K += ( Rect_<_Tp>& a, const Point_<_Tp>& b )
+[4.662s]       |             [01;36m[K^~~~~~~~[m[K
+[4.662s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1934:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.662s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Rect_<_Tp>[m[K’
+[4.662s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.662s]       |                [01;36m[K^~~~~~[m[K
+[4.662s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.662s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.662s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.662s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1950:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Rect_<_Tp>& cv::operator+=(cv::Rect_<_Tp>&, const cv::Size_<_Tp>&)[m[K’
+[4.663s]  1950 | Rect_<_Tp>& [01;36m[Koperator[m[K += ( Rect_<_Tp>& a, const Size_<_Tp>& b )
+[4.663s]       |             [01;36m[K^~~~~~~~[m[K
+[4.663s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1950:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.663s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Rect_<_Tp>[m[K’
+[4.663s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.663s]       |                [01;36m[K^~~~~~[m[K
+[4.663s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.663s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.663s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.663s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2272:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Scalar_<_Tp>& cv::operator+=(cv::Scalar_<_Tp>&, const cv::Scalar_<_Tp>&)[m[K’
+[4.663s]  2272 | Scalar_<_Tp>& [01;36m[Koperator[m[K += (Scalar_<_Tp>& a, const Scalar_<_Tp>& b)
+[4.663s]       |               [01;36m[K^~~~~~~~[m[K
+[4.664s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2272:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.664s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Scalar_<_Tp>[m[K’
+[4.664s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.664s]       |                [01;36m[K^~~~~~[m[K
+[4.664s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[4.664s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[4.664s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.664s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.664s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3149:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const cv::MatExpr&)[m[K’
+[4.664s]  3149 | Mat_<_Tp>& [01;36m[Koperator[m[K += (Mat_<_Tp>& a, const MatExpr& b)
+[4.664s]       |            [01;36m[K^~~~~~~~[m[K
+[4.664s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3149:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.664s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Mat_<_Tp>[m[K’
+[4.664s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.664s]       |                [01;36m[K^~~~~~[m[K
+[4.665s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[4.665s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[4.665s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.665s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.665s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3156:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const cv::MatExpr&)[m[K’
+[4.665s]  3156 | const Mat_<_Tp>& [01;36m[Koperator[m[K += (const Mat_<_Tp>& a, const MatExpr& b)
+[4.665s]       |                  [01;36m[K^~~~~~~~[m[K
+[4.665s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3156:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.665s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Mat_<_Tp>[m[K’
+[4.665s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.665s]       |                [01;36m[K^~~~~~[m[K
+[4.665s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.665s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.665s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.665s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:271:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const cv::Mat&)[m[K’
+[4.666s]   271 | [01;36m[KCV_MAT_AUG_OPERATOR_T[m[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Mat)
+[4.666s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.666s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:271:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.666s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Mat_<_Tp>[m[K’
+[4.666s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.666s]       |                [01;36m[K^~~~~~[m[K
+[4.666s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.666s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.666s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.666s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:271:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const cv::Mat&)[m[K’
+[4.666s]   271 | [01;36m[KCV_MAT_AUG_OPERATOR_T[m[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Mat)
+[4.666s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.666s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:271:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.666s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Mat_<_Tp>[m[K’
+[4.666s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.667s]       |                [01;36m[K^~~~~~[m[K
+[4.667s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.667s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.667s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.667s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:272:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const Scalar&)[m[K’
+[4.667s]   272 | [01;36m[KCV_MAT_AUG_OPERATOR_T[m[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Scalar)
+[4.667s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.667s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:272:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.667s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Mat_<_Tp>[m[K’
+[4.667s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.667s]       |                [01;36m[K^~~~~~[m[K
+[4.667s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.667s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.667s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.668s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:272:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const Scalar&)[m[K’
+[4.668s]   272 | [01;36m[KCV_MAT_AUG_OPERATOR_T[m[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Scalar)
+[4.668s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.668s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:272:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.668s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Mat_<_Tp>[m[K’
+[4.668s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.668s]       |                [01;36m[K^~~~~~[m[K
+[4.668s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.668s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.668s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.668s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:273:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const cv::Mat_<_Tp>&)[m[K’
+[4.668s]   273 | [01;36m[KCV_MAT_AUG_OPERATOR_T[m[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Mat_<_Tp>)
+[4.668s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.668s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:273:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.668s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Mat_<_Tp>[m[K’
+[4.669s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.669s]       |                [01;36m[K^~~~~~[m[K
+[4.669s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.669s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.669s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.669s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:273:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const cv::Mat_<_Tp>&)[m[K’
+[4.669s]   273 | [01;36m[KCV_MAT_AUG_OPERATOR_T[m[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Mat_<_Tp>)
+[4.669s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.669s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:273:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.669s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Mat_<_Tp>[m[K’
+[4.669s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.669s]       |                [01;36m[K^~~~~~[m[K
+[4.669s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.669s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.669s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.670s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:274:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::Mat& cv::operator+=(cv::Mat&, const cv::Matx<_Tp, m, n>&)[m[K’
+[4.670s]   274 | [01;36m[KCV_MAT_AUG_OPERATOR_TN[m[K(+=, cv::add(a, Mat(b), (const Mat&)a), Mat)
+[4.670s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.670s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:274:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.670s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+[4.670s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.670s]       |                [01;36m[K^~~~~~[m[K
+[4.670s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.670s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.670s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.670s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:274:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> const cv::Mat& cv::operator+=(const cv::Mat&, const cv::Matx<_Tp, m, n>&)[m[K’
+[4.670s]   274 | [01;36m[KCV_MAT_AUG_OPERATOR_TN[m[K(+=, cv::add(a, Mat(b), (const Mat&)a), Mat)
+[4.670s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.670s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:274:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.670s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+[4.671s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.671s]       |                [01;36m[K^~~~~~[m[K
+[4.671s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.671s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.671s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.671s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:275:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const cv::Matx<_Tp, m, n>&)[m[K’
+[4.671s]   275 | [01;36m[KCV_MAT_AUG_OPERATOR_TN[m[K(+=, cv::add(a, Mat(b), (const Mat&)a), Mat_<_Tp>)
+[4.671s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.671s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:275:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.671s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Mat_<_Tp>[m[K’
+[4.671s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.671s]       |                [01;36m[K^~~~~~[m[K
+[4.671s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.671s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.672s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.672s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:275:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const cv::Matx<_Tp, m, n>&)[m[K’
+[4.672s]   275 | [01;36m[KCV_MAT_AUG_OPERATOR_TN[m[K(+=, cv::add(a, Mat(b), (const Mat&)a), Mat_<_Tp>)
+[4.672s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.672s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:275:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.672s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:91:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Mat_<_Tp>[m[K’
+[4.672s]    91 |         pt1 += [01;36m[Kcenter[m[K;
+[4.672s]       |                [01;36m[K^~~~~~[m[K
+[4.672s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[4.672s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[4.672s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.672s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.672s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3135:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat& cv::operator+=(cv::Mat&, const cv::MatExpr&)[m[K’
+[4.672s]  3135 | Mat& [01;36m[Koperator[m[K += (Mat& a, const MatExpr& b)
+[4.672s]       |      [01;36m[K^~~~~~~~[m[K
+[4.673s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3135:24:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kcv::Mat&[m[K’
+[4.673s]  3135 | Mat& operator += ([01;36m[KMat& a[m[K, const MatExpr& b)
+[4.673s]       |                   [01;36m[K~~~~~^[m[K
+[4.673s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3142:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst cv::Mat& cv::operator+=(const cv::Mat&, const cv::MatExpr&)[m[K’
+[4.673s]  3142 | const Mat& [01;36m[Koperator[m[K += (const Mat& a, const MatExpr& b)
+[4.673s]       |            [01;36m[K^~~~~~~~[m[K
+[4.673s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3142:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst cv::Mat&[m[K’
+[4.673s]  3142 | const Mat& operator += ([01;36m[Kconst Mat& a[m[K, const MatExpr& b)
+[4.673s]       |                         [01;36m[K~~~~~~~~~~~^[m[K
+[4.673s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.673s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.673s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.673s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:269:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat& cv::operator+=(cv::Mat&, const cv::Mat&)[m[K’
+[4.673s]   269 | [01;36m[KCV_MAT_AUG_OPERATOR[m[K  (+=, cv::add(a, b, (const Mat&)a), Mat, Mat)
+[4.674s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.674s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:269:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kcv::Mat&[m[K’
+[4.674s]   269 | [01;36m[KC[m[KV_MAT_AUG_OPERATOR  (+=, cv::add(a, b, (const Mat&)a), Mat, Mat)
+[4.674s]       | [01;36m[K^[m[K
+[4.674s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:269:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst cv::Mat& cv::operator+=(const cv::Mat&, const cv::Mat&)[m[K’
+[4.674s]   269 | [01;36m[KCV_MAT_AUG_OPERATOR[m[K  (+=, cv::add(a, b, (const Mat&)a), Mat, Mat)
+[4.674s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.674s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:269:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst cv::Mat&[m[K’
+[4.674s]   269 | [01;36m[KC[m[KV_MAT_AUG_OPERATOR  (+=, cv::add(a, b, (const Mat&)a), Mat, Mat)
+[4.674s]       | [01;36m[K^[m[K
+[4.674s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:270:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat& cv::operator+=(cv::Mat&, const Scalar&)[m[K’
+[4.674s]   270 | [01;36m[KCV_MAT_AUG_OPERATOR[m[K  (+=, cv::add(a, b, (const Mat&)a), Mat, Scalar)
+[4.674s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.674s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:270:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kcv::Mat&[m[K’
+[4.675s]   270 | [01;36m[KC[m[KV_MAT_AUG_OPERATOR  (+=, cv::add(a, b, (const Mat&)a), Mat, Scalar)
+[4.675s]       | [01;36m[K^[m[K
+[4.675s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:270:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst cv::Mat& cv::operator+=(const cv::Mat&, const Scalar&)[m[K’
+[4.675s]   270 | [01;36m[KCV_MAT_AUG_OPERATOR[m[K  (+=, cv::add(a, b, (const Mat&)a), Mat, Scalar)
+[4.675s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.675s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:270:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst cv::Mat&[m[K’
+[4.675s]   270 | [01;36m[KC[m[KV_MAT_AUG_OPERATOR  (+=, cv::add(a, b, (const Mat&)a), Mat, Scalar)
+[4.675s]       | [01;36m[K^[m[K
+[4.675s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:13:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+=[m[K’ (operand types are ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} and ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’})
+[4.675s]    92 |         [01;31m[Kpt2 += center[m[K;
+[4.675s]       |         [01;31m[K~~~~^~~~~~~~~[m[K
+[4.675s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:56[m[K,
+[4.675s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.675s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.676s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1194:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp1, class _Tp2, int m, int n> cv::Matx<_Tp, m, n>& cv::operator+=(cv::Matx<_Tp, m, n>&, const cv::Matx<_Tp2, m, n>&)[m[K’
+[4.676s]  1194 | Matx<_Tp1, m, n>& [01;36m[Koperator[m[K += (Matx<_Tp1, m, n>& a, const Matx<_Tp2, m, n>& b)
+[4.676s]       |                   [01;36m[K^~~~~~~~[m[K
+[4.676s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1194:19:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.676s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Matx<_Tp, m, n>[m[K’
+[4.676s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.676s]       |                [01;36m[K^~~~~~[m[K
+[4.676s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:56[m[K,
+[4.676s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.676s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.676s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1350:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp1, class _Tp2, int cn> cv::Vec<_Tp, n>& cv::operator+=(cv::Vec<_Tp, n>&, const cv::Vec<_Tp2, cn>&)[m[K’
+[4.676s]  1350 | Vec<_Tp1, cn>& [01;36m[Koperator[m[K += (Vec<_Tp1, cn>& a, const Vec<_Tp2, cn>& b)
+[4.676s]       |                [01;36m[K^~~~~~~~[m[K
+[4.676s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1350:16:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.676s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Vec<_Tp, n>[m[K’
+[4.677s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.677s]       |                [01;36m[K^~~~~~[m[K
+[4.677s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.677s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.677s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.677s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1047:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Complex<_Tp>& cv::operator+=(cv::Complex<_Tp>&, const cv::Complex<_Tp>&)[m[K’
+[4.677s]  1047 | Complex<_Tp>& [01;36m[Koperator[m[K += (Complex<_Tp>& a, const Complex<_Tp>& b)
+[4.677s]       |               [01;36m[K^~~~~~~~[m[K
+[4.677s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1047:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.677s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Complex<_Tp>[m[K’
+[4.677s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.677s]       |                [01;36m[K^~~~~~[m[K
+[4.677s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.677s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.677s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.678s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1113:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Complex<_Tp>& cv::operator+=(cv::Complex<_Tp>&, _Tp)[m[K’
+[4.678s]  1113 | Complex<_Tp>& [01;36m[Koperator[m[K += (Complex<_Tp>& a, _Tp b)
+[4.678s]       |               [01;36m[K^~~~~~~~[m[K
+[4.678s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1113:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.678s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Complex<_Tp>[m[K’
+[4.678s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.678s]       |                [01;36m[K^~~~~~[m[K
+[4.678s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.678s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.678s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.679s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1251:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point_<_Tp>& cv::operator+=(cv::Point_<_Tp>&, const cv::Point_<_Tp>&)[m[K’
+[4.679s]  1251 | Point_<_Tp>& [01;36m[Koperator[m[K += (Point_<_Tp>& a, const Point_<_Tp>& b)
+[4.679s]       |              [01;36m[K^~~~~~~~[m[K
+[4.679s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1251:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.679s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  deduced conflicting types for parameter ‘[01m[K_Tp[m[K’ (‘[01m[Kfloat[m[K’ and ‘[01m[Kint[m[K’)
+[4.679s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.679s]       |                [01;36m[K^~~~~~[m[K
+[4.679s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.679s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.679s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.680s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1512:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Point3_<_Tp>& cv::operator+=(cv::Point3_<_Tp>&, const cv::Point3_<_Tp>&)[m[K’
+[4.680s]  1512 | Point3_<_Tp>& [01;36m[Koperator[m[K += (Point3_<_Tp>& a, const Point3_<_Tp>& b)
+[4.680s]       |               [01;36m[K^~~~~~~~[m[K
+[4.680s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1512:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.680s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Point3_<_Tp>[m[K’
+[4.680s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.680s]       |                [01;36m[K^~~~~~[m[K
+[4.680s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.680s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.680s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.680s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1791:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Size_<_Tp>& cv::operator+=(cv::Size_<_Tp>&, const cv::Size_<_Tp>&)[m[K’
+[4.680s]  1791 | Size_<_Tp>& [01;36m[Koperator[m[K += (Size_<_Tp>& a, const Size_<_Tp>& b)
+[4.680s]       |             [01;36m[K^~~~~~~~[m[K
+[4.680s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1791:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.681s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Size_<_Tp>[m[K’
+[4.681s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.681s]       |                [01;36m[K^~~~~~[m[K
+[4.681s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.681s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.681s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.681s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1934:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Rect_<_Tp>& cv::operator+=(cv::Rect_<_Tp>&, const cv::Point_<_Tp>&)[m[K’
+[4.681s]  1934 | Rect_<_Tp>& [01;36m[Koperator[m[K += ( Rect_<_Tp>& a, const Point_<_Tp>& b )
+[4.681s]       |             [01;36m[K^~~~~~~~[m[K
+[4.681s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1934:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.681s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Rect_<_Tp>[m[K’
+[4.681s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.681s]       |                [01;36m[K^~~~~~[m[K
+[4.681s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.681s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.682s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.682s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1950:13:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Rect_<_Tp>& cv::operator+=(cv::Rect_<_Tp>&, const cv::Size_<_Tp>&)[m[K’
+[4.682s]  1950 | Rect_<_Tp>& [01;36m[Koperator[m[K += ( Rect_<_Tp>& a, const Size_<_Tp>& b )
+[4.682s]       |             [01;36m[K^~~~~~~~[m[K
+[4.682s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:1950:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.682s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Rect_<_Tp>[m[K’
+[4.682s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.682s]       |                [01;36m[K^~~~~~[m[K
+[4.682s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[4.682s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.682s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.682s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2272:15:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Scalar_<_Tp>& cv::operator+=(cv::Scalar_<_Tp>&, const cv::Scalar_<_Tp>&)[m[K’
+[4.682s]  2272 | Scalar_<_Tp>& [01;36m[Koperator[m[K += (Scalar_<_Tp>& a, const Scalar_<_Tp>& b)
+[4.682s]       |               [01;36m[K^~~~~~~~[m[K
+[4.682s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:2272:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.682s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Scalar_<_Tp>[m[K’
+[4.683s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.683s]       |                [01;36m[K^~~~~~[m[K
+[4.683s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[4.683s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[4.683s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.683s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.683s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3149:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const cv::MatExpr&)[m[K’
+[4.683s]  3149 | Mat_<_Tp>& [01;36m[Koperator[m[K += (Mat_<_Tp>& a, const MatExpr& b)
+[4.683s]       |            [01;36m[K^~~~~~~~[m[K
+[4.683s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3149:12:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.683s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Mat_<_Tp>[m[K’
+[4.683s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.683s]       |                [01;36m[K^~~~~~[m[K
+[4.683s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[4.684s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[4.684s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.684s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.684s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3156:18:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const cv::MatExpr&)[m[K’
+[4.684s]  3156 | const Mat_<_Tp>& [01;36m[Koperator[m[K += (const Mat_<_Tp>& a, const MatExpr& b)
+[4.684s]       |                  [01;36m[K^~~~~~~~[m[K
+[4.684s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3156:18:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.684s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Mat_<_Tp>[m[K’
+[4.684s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.684s]       |                [01;36m[K^~~~~~[m[K
+[4.684s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.684s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.684s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.684s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:271:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const cv::Mat&)[m[K’
+[4.684s]   271 | [01;36m[KCV_MAT_AUG_OPERATOR_T[m[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Mat)
+[4.685s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.685s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:271:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.685s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Mat_<_Tp>[m[K’
+[4.685s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.685s]       |                [01;36m[K^~~~~~[m[K
+[4.685s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.685s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.685s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.685s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:271:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const cv::Mat&)[m[K’
+[4.685s]   271 | [01;36m[KCV_MAT_AUG_OPERATOR_T[m[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Mat)
+[4.685s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.685s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:271:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.685s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Mat_<_Tp>[m[K’
+[4.685s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.685s]       |                [01;36m[K^~~~~~[m[K
+[4.686s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.686s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.686s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.686s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:272:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const Scalar&)[m[K’
+[4.686s]   272 | [01;36m[KCV_MAT_AUG_OPERATOR_T[m[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Scalar)
+[4.686s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.686s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:272:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.686s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Mat_<_Tp>[m[K’
+[4.686s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.686s]       |                [01;36m[K^~~~~~[m[K
+[4.686s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.686s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.686s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.686s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:272:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const Scalar&)[m[K’
+[4.686s]   272 | [01;36m[KCV_MAT_AUG_OPERATOR_T[m[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Scalar)
+[4.687s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.687s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:272:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.687s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Mat_<_Tp>[m[K’
+[4.687s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.687s]       |                [01;36m[K^~~~~~[m[K
+[4.687s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.687s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.687s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.687s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:273:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const cv::Mat_<_Tp>&)[m[K’
+[4.687s]   273 | [01;36m[KCV_MAT_AUG_OPERATOR_T[m[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Mat_<_Tp>)
+[4.687s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.687s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:273:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.687s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Mat_<_Tp>[m[K’
+[4.687s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.688s]       |                [01;36m[K^~~~~~[m[K
+[4.688s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.688s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.688s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.688s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:273:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const cv::Mat_<_Tp>&)[m[K’
+[4.688s]   273 | [01;36m[KCV_MAT_AUG_OPERATOR_T[m[K(+=, cv::add(a, b, (const Mat&)a), Mat_<_Tp>, Mat_<_Tp>)
+[4.688s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[4.688s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:273:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.688s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Mat_<_Tp>[m[K’
+[4.688s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.688s]       |                [01;36m[K^~~~~~[m[K
+[4.688s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.688s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.688s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.689s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:274:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::Mat& cv::operator+=(cv::Mat&, const cv::Matx<_Tp, m, n>&)[m[K’
+[4.689s]   274 | [01;36m[KCV_MAT_AUG_OPERATOR_TN[m[K(+=, cv::add(a, Mat(b), (const Mat&)a), Mat)
+[4.689s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.689s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:274:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.689s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+[4.689s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.689s]       |                [01;36m[K^~~~~~[m[K
+[4.689s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.689s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.689s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.689s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:274:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> const cv::Mat& cv::operator+=(const cv::Mat&, const cv::Matx<_Tp, m, n>&)[m[K’
+[4.689s]   274 | [01;36m[KCV_MAT_AUG_OPERATOR_TN[m[K(+=, cv::add(a, Mat(b), (const Mat&)a), Mat)
+[4.689s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.689s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:274:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.690s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’ {aka ‘[01m[Kcv::Point_<int>[m[K’} is not derived from ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’
+[4.690s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.690s]       |                [01;36m[K^~~~~~[m[K
+[4.690s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.690s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.690s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.690s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:275:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::Mat_<_Tp>& cv::operator+=(cv::Mat_<_Tp>&, const cv::Matx<_Tp, m, n>&)[m[K’
+[4.690s]   275 | [01;36m[KCV_MAT_AUG_OPERATOR_TN[m[K(+=, cv::add(a, Mat(b), (const Mat&)a), Mat_<_Tp>)
+[4.690s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.690s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:275:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.690s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kcv::Mat_<_Tp>[m[K’
+[4.690s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.690s]       |                [01;36m[K^~~~~~[m[K
+[4.690s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.690s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.691s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.691s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:275:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> const cv::Mat_<_Tp>& cv::operator+=(const cv::Mat_<_Tp>&, const cv::Matx<_Tp, m, n>&)[m[K’
+[4.691s]   275 | [01;36m[KCV_MAT_AUG_OPERATOR_TN[m[K(+=, cv::add(a, Mat(b), (const Mat&)a), Mat_<_Tp>)
+[4.691s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.691s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:275:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.691s] [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:92:16:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} is not derived from ‘[01m[Kconst cv::Mat_<_Tp>[m[K’
+[4.691s]    92 |         pt2 += [01;36m[Kcenter[m[K;
+[4.691s]       |                [01;36m[K^~~~~~[m[K
+[4.691s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3764[m[K,
+[4.691s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[4.691s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.691s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.691s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3135:6:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat& cv::operator+=(cv::Mat&, const cv::MatExpr&)[m[K’
+[4.691s]  3135 | Mat& [01;36m[Koperator[m[K += (Mat& a, const MatExpr& b)
+[4.692s]       |      [01;36m[K^~~~~~~~[m[K
+[4.692s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3135:24:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kcv::Mat&[m[K’
+[4.692s]  3135 | Mat& operator += ([01;36m[KMat& a[m[K, const MatExpr& b)
+[4.692s]       |                   [01;36m[K~~~~~^[m[K
+[4.692s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3142:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst cv::Mat& cv::operator+=(const cv::Mat&, const cv::MatExpr&)[m[K’
+[4.692s]  3142 | const Mat& [01;36m[Koperator[m[K += (const Mat& a, const MatExpr& b)
+[4.692s]       |            [01;36m[K^~~~~~~~[m[K
+[4.692s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:3142:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst cv::Mat&[m[K’
+[4.692s]  3142 | const Mat& operator += ([01;36m[Kconst Mat& a[m[K, const MatExpr& b)
+[4.692s]       |                         [01;36m[K~~~~~~~~~~~^[m[K
+[4.692s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:3305[m[K,
+[4.692s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.692s]                  from [01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:4[m[K:
+[4.692s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:269:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat& cv::operator+=(cv::Mat&, const cv::Mat&)[m[K’
+[4.692s]   269 | [01;36m[KCV_MAT_AUG_OPERATOR[m[K  (+=, cv::add(a, b, (const Mat&)a), Mat, Mat)
+[4.693s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.693s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:269:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kcv::Mat&[m[K’
+[4.693s]   269 | [01;36m[KC[m[KV_MAT_AUG_OPERATOR  (+=, cv::add(a, b, (const Mat&)a), Mat, Mat)
+[4.693s]       | [01;36m[K^[m[K
+[4.693s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:269:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst cv::Mat& cv::operator+=(const cv::Mat&, const cv::Mat&)[m[K’
+[4.693s]   269 | [01;36m[KCV_MAT_AUG_OPERATOR[m[K  (+=, cv::add(a, b, (const Mat&)a), Mat, Mat)
+[4.693s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.693s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:269:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst cv::Mat&[m[K’
+[4.693s]   269 | [01;36m[KC[m[KV_MAT_AUG_OPERATOR  (+=, cv::add(a, b, (const Mat&)a), Mat, Mat)
+[4.693s]       | [01;36m[K^[m[K
+[4.693s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:270:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat& cv::operator+=(cv::Mat&, const Scalar&)[m[K’
+[4.693s]   270 | [01;36m[KCV_MAT_AUG_OPERATOR[m[K  (+=, cv::add(a, b, (const Mat&)a), Mat, Scalar)
+[4.693s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.693s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:270:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kcv::Mat&[m[K’
+[4.693s]   270 | [01;36m[KC[m[KV_MAT_AUG_OPERATOR  (+=, cv::add(a, b, (const Mat&)a), Mat, Scalar)
+[4.694s]       | [01;36m[K^[m[K
+[4.694s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:270:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconst cv::Mat& cv::operator+=(const cv::Mat&, const Scalar&)[m[K’
+[4.694s]   270 | [01;36m[KCV_MAT_AUG_OPERATOR[m[K  (+=, cv::add(a, b, (const Mat&)a), Mat, Scalar)
+[4.694s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.694s] [01m[K/usr/include/opencv4/opencv2/core/operations.hpp:270:1:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kcv::Point2f[m[K’ {aka ‘[01m[Kcv::Point_<float>[m[K’} to ‘[01m[Kconst cv::Mat&[m[K’
+[4.694s]   270 | [01;36m[KC[m[KV_MAT_AUG_OPERATOR  (+=, cv::add(a, b, (const Mat&)a), Mat, Scalar)
+[4.694s]       | [01;36m[K^[m[K
+[8.510s] gmake[2]: *** [CMakeFiles/laser_consumer.dir/build.make:76: CMakeFiles/laser_consumer.dir/src/laser_consumer.cpp.o] Error 1
+[8.510s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/laser_consumer.dir/all] Error 2
+[8.510s] gmake: *** [Makefile:146: all] Error 2
+[8.512s] Invoked command in '/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer' returned '2': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer -- -j4 -l4

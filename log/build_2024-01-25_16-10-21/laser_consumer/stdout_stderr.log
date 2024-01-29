@@ -1,0 +1,15 @@
+[35m[1mConsolidate compiler generated dependencies of target laser_consumer[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/laser_consumer.dir/src/laser_consumer.cpp.o[0m
+[01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:[m[K In member function ‘[01m[Kvoid LidarReader::topic_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:66:17:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kcv::Mat lines[m[K’
+   66 |         cv::Mat [01;31m[Klines[m[K = img;
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:64:32:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Kstd::vector<cv::Vec<float, 2> > lines[m[K’
+   64 |         std::vector<cv::Vec2f> [01;36m[Klines[m[K;
+      |                                [01;36m[K^~~~~[m[K
+[01m[K/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/src/laser_consumer.cpp:85:26:[m[K [01;31m[Kerror: [m[K‘[01m[Klines_img[m[K’ was not declared in this scope
+   85 |                 cv::line([01;31m[Klines_img[m[K, pt1, pt2, cv::Scalar(0, 0, 255), 1, cv::LINE_AA);
+      |                          [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/laser_consumer.dir/build.make:76: CMakeFiles/laser_consumer.dir/src/laser_consumer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/laser_consumer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

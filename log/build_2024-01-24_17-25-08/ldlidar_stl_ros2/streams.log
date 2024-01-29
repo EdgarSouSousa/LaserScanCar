@@ -1,0 +1,59 @@
+[0.164s] Invoking command in '/home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2 -- -j4 -l4
+[0.287s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.869s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.880s] -- Found rclcpp: 21.0.4 (/opt/ros/iron/share/rclcpp/cmake)
+[0.943s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[0.963s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[0.993s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.031s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.468s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[1.471s] -- Found rmw_fastrtps_cpp: 7.1.2 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[1.721s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.174s] -- Found sensor_msgs: 5.0.0 (/opt/ros/iron/share/sensor_msgs/cmake)
+[2.840s] -- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[2.980s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.998s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.000s] -- Configured cppcheck include dirs: /home/edgar/Desktop/ldlidar_ros2_ws/src/ldlidar_stl_ros2/include;/home/edgar/Desktop/ldlidar_ros2_ws/src/ldlidar_stl_ros2/ldlidar_driver/include/core;/home/edgar/Desktop/ldlidar_ros2_ws/src/ldlidar_stl_ros2/ldlidar_driver/include/dataprocess;/home/edgar/Desktop/ldlidar_ros2_ws/src/ldlidar_stl_ros2/ldlidar_driver/include/filter;/home/edgar/Desktop/ldlidar_ros2_ws/src/ldlidar_stl_ros2/ldlidar_driver/include/logger;/home/edgar/Desktop/ldlidar_ros2_ws/src/ldlidar_stl_ros2/ldlidar_driver/include/networkcom;/home/edgar/Desktop/ldlidar_ros2_ws/src/ldlidar_stl_ros2/ldlidar_driver/include/serialcom
+[3.000s] -- Configured cppcheck exclude dirs and/or files: 
+[3.018s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.018s] -- Configured cpplint exclude dirs and/or files: 
+[3.021s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.021s] -- Configured 'flake8' exclude dirs and/or files: 
+[3.026s] -- Added test 'lint_cmake' to check CMake code style
+[3.029s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.043s] -- Added test 'uncrustify' to check C / C++ code style
+[3.043s] -- Configured uncrustify additional arguments: 
+[3.054s] -- Added test 'xmllint' to check XML markup files
+[3.066s] -- Configuring done
+[3.092s] -- Generating done
+[3.096s] -- Build files have been written to: /home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2
+[3.324s] [35m[1mConsolidate compiler generated dependencies of target ldlidar_stl_ros2_node[0m
+[3.680s] [100%] Built target ldlidar_stl_ros2_node
+[3.731s] Invoked command in '/home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2 -- -j4 -l4
+[4.215s] Invoking command in '/home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2
+[4.229s] -- Install configuration: ""
+[4.229s] -- Execute custom install script
+[4.230s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/lib/ldlidar_stl_ros2/ldlidar_stl_ros2_node
+[4.230s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/ld06.launch.py
+[4.230s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/ld19.launch.py
+[4.230s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/stl27l.launch.py
+[4.230s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_ld06.launch.py
+[4.231s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_ld19.launch.py
+[4.231s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_stl27l.launch.py
+[4.231s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//rviz2/ldlidar.rviz
+[4.231s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/package_run_dependencies/ldlidar_stl_ros2
+[4.231s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/parent_prefix_path/ldlidar_stl_ros2
+[4.232s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/ament_prefix_path.sh
+[4.232s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/ament_prefix_path.dsv
+[4.232s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/path.sh
+[4.232s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/path.dsv
+[4.232s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.bash
+[4.232s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.sh
+[4.232s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.zsh
+[4.232s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.dsv
+[4.233s] -- Symlinking: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.dsv
+[4.245s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ament_index/resource_index/packages/ldlidar_stl_ros2
+[4.246s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/cmake/ldlidar_stl_ros2Config.cmake
+[4.246s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/cmake/ldlidar_stl_ros2Config-version.cmake
+[4.246s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.xml
+[4.248s] Invoked command in '/home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/edgar/Desktop/ldlidar_ros2_ws/build/ldlidar_stl_ros2

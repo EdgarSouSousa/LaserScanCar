@@ -1,0 +1,10 @@
+/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer/CMakeFiles/uninstall.dir
+/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer/CMakeFiles/laser_consumer_uninstall.dir
+/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer/CMakeFiles/laser_consumer.dir
+/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer/CMakeFiles/test.dir
+/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer/CMakeFiles/edit_cache.dir
+/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer/CMakeFiles/rebuild_cache.dir
+/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer/CMakeFiles/list_install_components.dir
+/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer/CMakeFiles/install.dir
+/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer/CMakeFiles/install/local.dir
+/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer/CMakeFiles/install/strip.dir
