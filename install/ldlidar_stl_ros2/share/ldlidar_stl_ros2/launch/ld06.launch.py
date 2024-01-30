@@ -1,1 +1,1 @@
-/home/edgar/Desktop/ldlidar_ros2_ws/src/ldlidar_stl_ros2/launch/ld06.launch.py
+/home/edgar/Desktop/Repo/LaserScanCar/src/ldlidar_stl_ros2/launch/ld06.launch.py

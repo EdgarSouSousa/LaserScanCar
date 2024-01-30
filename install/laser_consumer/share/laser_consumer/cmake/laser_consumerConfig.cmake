@@ -1,1 +1,1 @@
-/home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer/ament_cmake_core/laser_consumerConfig.cmake
+/home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer/ament_cmake_core/laser_consumerConfig.cmake
