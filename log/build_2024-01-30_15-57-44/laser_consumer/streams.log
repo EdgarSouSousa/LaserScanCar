@@ -1,0 +1,47 @@
+[0.283s] Invoking command in '/home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer -- -j4 -l4
+[0.302s] [0mCMake Error: The current CMakeCache.txt directory /home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer/CMakeCache.txt is different than the directory /home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.330s] -- Found ament_cmake: 2.0.3 (/opt/ros/iron/share/ament_cmake/cmake)
+[1.105s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.122s] -- Found rclcpp: 21.0.4 (/opt/ros/iron/share/rclcpp/cmake)
+[1.201s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[1.228s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[1.269s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.314s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.792s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[1.795s] -- Found rmw_fastrtps_cpp: 7.1.2 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[2.105s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.958s] -- Found sensor_msgs: 5.0.0 (/opt/ros/iron/share/sensor_msgs/cmake)
+[4.464s] -- Found ament_lint_auto: 0.14.2 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[4.720s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.728s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/edgar/Desktop/ldlidar_ros2_ws/src/laser_consumer/include>
+[4.729s] -- Configured cppcheck exclude dirs and/or files: 
+[4.729s] -- Added test 'lint_cmake' to check CMake code style
+[4.729s] -- Added test 'uncrustify' to check C / C++ code style
+[4.729s] -- Configured uncrustify additional arguments: 
+[4.729s] -- Added test 'xmllint' to check XML markup files
+[4.729s] -- Configuring done
+[4.772s] -- Generating done
+[4.774s] -- Build files have been written to: /home/edgar/Desktop/ldlidar_ros2_ws/build/laser_consumer
+[4.936s] [35m[1mConsolidate compiler generated dependencies of target laser_consumer[0m
+[5.007s] [100%] Built target laser_consumer
+[5.022s] Invoked command in '/home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer -- -j4 -l4
+[5.063s] Invoking command in '/home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer
+[5.074s] -- Install configuration: ""
+[5.076s] -- Execute custom install script
+[5.076s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/lib/laser_consumer/laser_consumer
+[5.077s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/ament_index/resource_index/package_run_dependencies/laser_consumer
+[5.077s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/ament_index/resource_index/parent_prefix_path/laser_consumer
+[5.077s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/environment/ament_prefix_path.sh
+[5.077s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/environment/ament_prefix_path.dsv
+[5.078s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/environment/path.sh
+[5.078s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/environment/path.dsv
+[5.079s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/local_setup.bash
+[5.079s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/local_setup.sh
+[5.079s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/local_setup.zsh
+[5.080s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/local_setup.dsv
+[5.080s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/package.dsv
+[5.081s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/ament_index/resource_index/packages/laser_consumer
+[5.081s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/cmake/laser_consumerConfig.cmake
+[5.081s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/cmake/laser_consumerConfig-version.cmake
+[5.082s] -- Up-to-date symlink: /home/edgar/Desktop/ldlidar_ros2_ws/install/laser_consumer/share/laser_consumer/package.xml
+[5.085s] Invoked command in '/home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer

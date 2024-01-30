@@ -1,0 +1,4 @@
+Invoking command in '/home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer -- -j4 -l4
+Invoked command in '/home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --build /home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer -- -j4 -l4
+Invoking command in '/home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer
+Invoked command in '/home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/iron /usr/bin/cmake --install /home/edgar/Desktop/Repo/LaserScanCar/build/laser_consumer
