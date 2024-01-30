@@ -8,6 +8,8 @@
         "initializer_list": "cpp",
         "utility": "cpp",
         "random": "cpp",
-        "complex": "cpp"
+        "complex": "cpp",
+        "chrono": "cpp",
+        "algorithm": "cpp"
     }
 }
