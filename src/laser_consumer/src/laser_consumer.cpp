@@ -5,6 +5,7 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include <opencv2/opencv.hpp>
+#include "lshaped_fitting.h"
 
 class LidarReader : public rclcpp::Node
 {
@@ -78,6 +79,7 @@ private:
             }
         }
 
+
         // Segmentation
         std::vector<std::vector<cv::Point2f>> clusters;
         std::vector<bool> checked(points.size(), false);
@@ -127,9 +129,28 @@ private:
         // Draw bounding boxes around clusters of points 
         cv::Mat objects_img = img.clone();
 
-        for (const auto& cluster : clusters)
+        for (auto& cluster : clusters)
         {
-            // Transform cluster points back to image coordinates
+            //apply lshaped fitting to the cluster
+            LShapedFIT lshapedfit;
+            cv::RotatedRect rect = lshapedfit.FitBox(&cluster);
+
+            //print the angle of the rectangle
+            std::cout << "Angle: " << rect.angle << std::endl;
+
+            //get the vertices of the rectangle
+            std::vector<cv::Point2f> vertices = lshapedfit.getRectVertex();
+
+            //convert the vertices to image coordinates
+            for (auto& vertex : vertices)
+            {
+                vertex.x = static_cast<int>((vertex.x + max_range) / (2 * max_range) * image_size);
+                vertex.y = static_cast<int>((max_range - vertex.y) / (2 * max_range) * image_size);
+            }
+
+
+           
+
             std::vector<cv::Point> cluster_img;
             for (const auto& point : cluster)
             {
@@ -142,13 +163,32 @@ private:
                 }
             }
 
+
+
             // Draw bounding box
             if (!cluster_img.empty())
             {
                 cv::Rect bounding_box = cv::boundingRect(cluster_img);
-                cv::rectangle(objects_img, bounding_box, cv::Scalar(255, 255, 255), 2);
+                cv::rectangle(img, bounding_box, cv::Scalar(255, 255, 255), 2);
             }
+
+             //if the rectangle is too thin dont draw it (filter out walls)
+            if (rect.size.width < 0.11 || rect.size.height < 0.11)
+            {
+                continue;
+            }
+
+            //draw the rectangle using vertex.x and vertex.y but cluster represents the closest edge of the rectangle
+            cv::line(objects_img, vertices[0], vertices[1], cv::Scalar(255, 255, 255), 2);
+            cv::line(objects_img, vertices[1], vertices[2], cv::Scalar(255, 255, 255), 2);
+            cv::line(objects_img, vertices[2], vertices[3], cv::Scalar(255, 255, 255), 2);
+            cv::line(objects_img, vertices[3], vertices[0], cv::Scalar(255, 255, 255), 2);
+
         }
+
+        //wait 0.5 seconds so that the image can be seen
+        cv::waitKey(1);
+        
 
         // Visualize
         cv::imshow("Raw Data", img);
