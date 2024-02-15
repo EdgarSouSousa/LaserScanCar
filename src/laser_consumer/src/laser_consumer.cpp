@@ -5,7 +5,6 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include <opencv2/opencv.hpp>
-#include "lshaped_fitting.h"
 
 class LidarReader : public rclcpp::Node
 {
@@ -15,8 +14,10 @@ public:
         subscription_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
             "/scan", 10, [this](const sensor_msgs::msg::LaserScan::SharedPtr msg){ this->topic_callback(msg); });
 
+        // Initialize previous clusters for the first frame
+        previous_clusters.clear();
+
         // Initialize OpenCV window for visualization
-        cv::namedWindow("Raw Data", cv::WINDOW_NORMAL);
         cv::namedWindow("Detected Objects", cv::WINDOW_NORMAL);
 
         // Initialize variables for scan rate calculation
@@ -30,16 +31,13 @@ private:
         const float max_range = 12.0;
         const float alpha = 0.0007; // Adjust this value according to your needs
         const int min_pts = 10;     // Adjust this value according to your needs
-        const float stability_threshold = 2.0; // Adjust this value according to your needs
+        
 
-        // Calculate scan rate
+        // Calculate frame time difference
         auto current_time = std::chrono::high_resolution_clock::now();
-        auto elapsed_time = std::chrono::duration_cast<std::chrono::milliseconds>(current_time - last_scan_time_);
-        double scan_rate = 1000.0 / elapsed_time.count();  // Convert to scans per second
+        std::chrono::duration<double> elapsed_seconds = current_time - last_scan_time_;
+        frame_time_difference_ = elapsed_seconds.count();
         last_scan_time_ = current_time;
-
-        // Print scan rate
-        std::cout << "Scan Rate: " << scan_rate << " scans per second" << std::endl;
 
         // Convert LaserScan data to Cartesian coordinates
         std::vector<cv::Point2f> points;
@@ -84,9 +82,6 @@ private:
         std::vector<std::vector<cv::Point2f>> clusters;
         std::vector<bool> checked(points.size(), false);
 
-        //print the number of points
-        std::cout << "Number of points: " << points.size() << std::endl;
-
         for (size_t i = 0; i < points.size(); ++i)
         {
             if (!checked[i])
@@ -128,76 +123,85 @@ private:
 
         // Draw bounding boxes around clusters of points 
         cv::Mat objects_img = img.clone();
+        
+        //convert from 1 color channel to 3 color channels
+        cv::cvtColor(objects_img, objects_img, cv::COLOR_GRAY2BGRA);
 
-        for (auto& cluster : clusters)
-        {
-            //apply lshaped fitting to the cluster
-            LShapedFIT lshapedfit;
-            cv::RotatedRect rect = lshapedfit.FitBox(&cluster);
-
-            //print the angle of the rectangle
-            std::cout << "Angle: " << rect.angle << std::endl;
-
-            //get the vertices of the rectangle
-            std::vector<cv::Point2f> vertices = lshapedfit.getRectVertex();
-
-            //convert the vertices to image coordinates
-            for (auto& vertex : vertices)
-            {
-                vertex.x = static_cast<int>((vertex.x + max_range) / (2 * max_range) * image_size);
-                vertex.y = static_cast<int>((max_range - vertex.y) / (2 * max_range) * image_size);
-            }
-
-
-           
-
+        for (auto& cluster : clusters) {
             std::vector<cv::Point> cluster_img;
-            for (const auto& point : cluster)
-            {
+            for (const auto& point : cluster) {
                 int x = static_cast<int>((point.x + max_range) / (2 * max_range) * image_size);
                 int y = static_cast<int>((max_range - point.y) / (2 * max_range) * image_size);
 
-                if (x >= 0 && x < image_size && y >= 0 && y < image_size)
-                {
+                if (x >= 0 && x < image_size && y >= 0 && y < image_size) {
                     cluster_img.push_back(cv::Point(x, y));
                 }
             }
 
-
-
             // Draw bounding box
-            if (!cluster_img.empty())
-            {
+            if (!cluster_img.empty()) {
                 cv::Rect bounding_box = cv::boundingRect(cluster_img);
-                cv::rectangle(img, bounding_box, cv::Scalar(255, 255, 255), 2);
+                cv::rectangle(objects_img, bounding_box, cv::Scalar(255, 255, 255), 2);
             }
-
-             //if the rectangle is too thin dont draw it (filter out walls)
-            if (rect.size.width < 0.11 || rect.size.height < 0.11)
-            {
-                continue;
-            }
-
-            //draw the rectangle using vertex.x and vertex.y but cluster represents the closest edge of the rectangle
-            cv::line(objects_img, vertices[0], vertices[1], cv::Scalar(255, 255, 255), 2);
-            cv::line(objects_img, vertices[1], vertices[2], cv::Scalar(255, 255, 255), 2);
-            cv::line(objects_img, vertices[2], vertices[3], cv::Scalar(255, 255, 255), 2);
-            cv::line(objects_img, vertices[3], vertices[0], cv::Scalar(255, 255, 255), 2);
-
         }
 
-        //wait 0.5 seconds so that the image can be seen
-        cv::waitKey(1);
-        
+        // Calculate speed based on previous and current clusters
+        if (!previous_clusters.empty()) {
+            // Assuming clusters_ is the current clusters found
+            for (const auto& current_cluster : clusters) {
+                // Find the nearest cluster in the previous frame
+                float min_distance = std::numeric_limits<float>::max();
+                for (const auto& prev_cluster : previous_clusters) {
+                    float distance = cv::norm(calculateCentroid(current_cluster) - calculateCentroid(prev_cluster));
+                    if (distance < min_distance) {
+                        min_distance = distance;
+                    }
+                }
 
-        // Visualize
-        cv::imshow("Raw Data", img);
+                // Calculate speed using the distance and time difference between frames
+                float speed = min_distance / frame_time_difference_; // Assuming you have frame_time_difference_
+
+                // Convert the speed from m/s to km/h
+                speed = speed * 3.6;
+
+                
+                // Display the average speed
+                cv::Point2f text_position = calculateCentroid(current_cluster);
+                // Adjust the text position since the coordinates of the image are different from the coordinates of the points
+                text_position.x = (text_position.x + max_range) / (2 * max_range) * image_size;
+                text_position.y = (max_range - text_position.y) / (2 * max_range) * image_size;
+                //slightly adjust the position of the text 10 pixels to the right and 10 pixels down
+                
+                text_position.y -=25;
+
+                //truncate the average speed to integer
+                speed = static_cast<int>(speed);
+                int final_speed = speed;
+
+
+                //put the text on the image as integer
+                cv::putText(objects_img, std::to_string(final_speed), text_position, cv::FONT_HERSHEY_SIMPLEX, 0.4, cv::Scalar(0, 255, 0), 1, cv::LINE_AA);
+                
+                //if the speed is greater than 10km/h put the image car_icon.png on the centroid of the cluster
+                if (speed > 15) {
+                    cv::Mat car_icon = cv::imread("car_icon.png", cv::IMREAD_UNCHANGED);
+                    cv::Point2f car_icon_position = calculateCentroid(current_cluster);
+                    car_icon_position.x = (car_icon_position.x + max_range) / (2 * max_range) * image_size;
+                    car_icon_position.y = (max_range - car_icon_position.y) / (2 * max_range) * image_size;
+                    car_icon_position.x -= car_icon.cols / 2;
+                    car_icon_position.y -= car_icon.rows / 2;
+                    car_icon.copyTo(objects_img(cv::Rect(car_icon_position.x, car_icon_position.y, car_icon.cols, car_icon.rows)));
+                }
+            }
+        }
+
+        clusters_ = clusters;
+
+        // Display images
         cv::imshow("Detected Objects", objects_img);
-        cv::waitKey(1);
 
         // Increment frame counter
         frame_counter_++;
-
     }
 
     // Find neighbors for a point used in the segmentation
@@ -229,43 +233,6 @@ private:
         return neighbors;
     }
 
-    // Check the stability of clusters over consecutive frames
-    void checkClusterStability(const std::vector<std::vector<cv::Point2f>>& current_clusters)
-    {
-        for (size_t i = 0; i < current_clusters.size(); ++i)
-        {
-            const auto& current_cluster = current_clusters[i];
-
-            // Find the corresponding cluster in the previous frame
-            if (i < previous_clusters_.size())
-            {
-                const auto& previous_cluster = previous_clusters_[i];
-
-                // Calculate centroids of the clusters
-                cv::Point2f current_centroid = calculateCentroid(current_cluster);
-                cv::Point2f previous_centroid = calculateCentroid(previous_cluster);
-
-                // Calculate the distance between centroids
-                float distance = cv::norm(current_centroid - previous_centroid);
-
-                // Check if the cluster is stable based on the distance threshold
-                if (distance < stability_threshold_)
-                {
-                    // Mark the cluster as stable (you can store this information for further analysis)
-                    std::cout << "Cluster " << i << " is stable.\n";
-                }
-                else
-                {
-                    // Mark the cluster as unstable (you can store this information for further analysis)
-                    std::cout << "Cluster " << i << " is unstable.\n";
-                }
-            }
-        }
-
-        // Update the previous clusters for the next frame
-        previous_clusters_ = current_clusters;
-    }
-
     // Calculate the centroid of a cluster
     cv::Point2f calculateCentroid(const std::vector<cv::Point2f>& cluster)
     {
@@ -281,11 +248,12 @@ private:
         return centroid;
     }
 
-    rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr subscription_;
+     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr subscription_;
     int frame_counter_;
-    std::vector<std::vector<cv::Point2f>> previous_clusters_;
-    float stability_threshold_ = 2.0; // Adjust this value according to your needs
+    std::vector<std::vector<cv::Point2f>> previous_clusters;
+    std::vector<std::vector<cv::Point2f>> clusters_;
     std::chrono::high_resolution_clock::time_point last_scan_time_;
+    double frame_time_difference_; // Change frame_time_difference_ to double
 };
 
 int main(int argc, char **argv)

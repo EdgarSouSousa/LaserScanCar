@@ -12,8 +12,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
 
 add_executable(laser_consumer
-  src/laser_consumer.cpp
-  src/lshaped_fitting.cpp  # Add your new source file here
+  src/laser_consumer.cpp  
 )
 
 target_include_directories(laser_consumer PUBLIC
